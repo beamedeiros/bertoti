@@ -8,4 +8,4 @@ https://sol.sbc.org.br/index.php/wit/article/view/20858/20684
 
 * Qual a metodologia?
 
-* Como o método científico evolui?
+* Quais foram os resultados?
