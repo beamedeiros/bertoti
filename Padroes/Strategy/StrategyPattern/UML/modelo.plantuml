@@ -1,6 +1,6 @@
 @startuml modelo 
 
-+interface Assistir{
++interface Assiste{
     +void assistir()
 }
 
@@ -22,7 +22,7 @@
     +void assistir()
 }
 
-+interface Tocar{
++interface Toca{
     +void tocar()
 }
 
@@ -40,11 +40,11 @@
     +void tocar()
 }
 
-Arquibancada..|>Assistir
-Internacional..|>Tocar
-Nacional..|>Tocar
-Normal..|>Assistir
-Premium..|>Assistir
-Banda*-->Tocar
-Pista*-->Assistir
+Arquibancada..|>Assiste
+Internacional..|>Toca
+Nacional..|>Toca
+Normal..|>Assiste
+Premium..|>Assiste
+Banda*-->Toca
+Pista*-->Assiste
 @enduml
