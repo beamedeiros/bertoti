@@ -1,6 +1,6 @@
 package app;
 
-public interface Tocar {
+public interface Toca {
 
 	public void tocar();
 	

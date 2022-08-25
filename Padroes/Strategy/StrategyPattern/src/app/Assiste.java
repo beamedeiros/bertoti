@@ -1,6 +1,6 @@
 package app;
 
-public interface Assistir {
+public interface Assiste {
 	
 	public void assistir();
 
