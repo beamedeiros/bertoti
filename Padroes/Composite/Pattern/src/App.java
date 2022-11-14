@@ -1,12 +1,26 @@
-import Composite.Feminino;
-import Composite.Masculino;
+import Composite.Forma;
+import Leafs.Circulo;
+import Leafs.Triangulo;
 
 public class App {
     public static void main(String args[]) {
-        Categoria categoria = new Categoria();
+        Forma tri = new Triangulo();
+        Forma tri1 = new Triangulo();
+        Forma cir = new Circulo();
 
-        categoria.addRoupa(new Feminino());
-        categoria.addRoupa(new Masculino());
-        categoria.printRoupaCategoria();
+        Desenho desenho = new Desenho();
+        desenho.adicionar(tri1);
+        desenho.adicionar(tri);
+        desenho.adicionar(cir);
+
+        desenho.desenho("Amarelo");
+
+        desenho.limpar();
+
+        desenho.adicionar(tri1);
+        desenho.adicionar(cir);
+        desenho.desenho("Verde");
+
+        desenho.remover(cir);
     }
 }
