@@ -15,10 +15,11 @@
 }
 
 +class Desenho{
+    -formas:List<Forma>
     +void desenho()
-    +void adicionar()
-    +void remover()
-    +void limpar()
+    +void adicionar(Forma)
+    ' +void remover()
+    ' +void limpar()
 }
 
 Desenho ..|> Forma
