@@ -256,6 +256,8 @@ Trabalhei com o papel de Scrum Master, gerenciando e ajudando com impedimentos d
 sobre as tarefas e suas divisões para cada membro da equipe.
 <details><summary>Jira - DescontOn</summary>
 Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está o roadmap do projeto. 
+
+<img src="https://user-images.githubusercontent.com/74321890/203658630-474dbc4f-a670-470a-836e-d75cd28cf59a.jpeg">
 </details>
 
 Fiquei responsável também pela parte de documentar o projeto, sendo no Github algumas descrições mais específicas e menos teóricas, já no documento em .pdf falo melhor 
