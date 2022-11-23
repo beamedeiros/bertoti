@@ -224,7 +224,7 @@ Oracle DB é um dos mais utilizados no mercado devido a sua capacidade de orient
 Transaction Processing), em data warehouse e na análise de negócios. Equipes de TI também precisam de desempenho sob demanda desses bancos de dados para as 
 necessidades de desenvolvimento, teste, análise e continuidade de negócios.
 
-Saiba mais sobre Oracle em sua [página oficial.](https://www.oracle.com/br/).
+Saiba mais sobre Oracle em sua [página oficial.](https://www.oracle.com/br/)
 </details>
 
 <details><summary>HTML</summary>
@@ -255,11 +255,14 @@ JavaScript envolvido.
 Trabalhei com o papel de Scrum Master, gerenciando e ajudando com impedimentos do time. Como ferramenta de apoio utilizamos o Jira para ter mais vizualição e controle 
 sobre as tarefas e suas divisões para cada membro da equipe.
 <details><summary>Jira - DescontOn</summary>
-Para poder visualizar melhor nossos métodos, tarefas distribuídas e integrantes, [clique aqui.](https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1/roadmap).
+Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está o roadmap do projeto. 
 </details>
 
 Fiquei responsável também pela parte de documentar o projeto, sendo no Github algumas descrições mais específicas e menos teóricas, já no documento em .pdf falo melhor 
 sobre a teoria das cores, descrição sobre linguagens e frameworks usados e explico trechos de código.
+<details><summary>Documentação</summary>
+Conheça um pouco mais sobre a aplicação e acesse a documentação.
+</details>
 
 Na parte de usabilidade, fiquei responsável pelos Wireframes no Figma e fiz cada tela prezando pela experiência do usuário (UX - user experience). Utilizamos template 
 do Bootstrap e trabalhamos com HTML/ CSS e JavaScript para o desenvolvimento da aplicação web.
