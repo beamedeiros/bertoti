@@ -263,7 +263,7 @@ Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está
 Fiquei responsável também pela parte de documentar o projeto, sendo no Github algumas descrições mais específicas e menos teóricas, já no documento em .pdf falo melhor 
 sobre a teoria das cores, descrição sobre linguagens e frameworks usados e explico trechos de código.
 <details><summary>Documentação</summary>
-Conheça um pouco mais sobre a aplicação 
+<img src="https://user-images.githubusercontent.com/74321890/203660418-1ba84ed7-a534-48b1-9335-eb8598f4ce4e.png">
 </details>
 
 Na parte de usabilidade, fiquei responsável pelos Wireframes no Figma e fiz cada tela prezando pela experiência do usuário (UX - user experience). Utilizamos template 
