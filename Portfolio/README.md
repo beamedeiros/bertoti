@@ -206,16 +206,17 @@ Link do repositório do projeto: https://github.com/DolphinDatabase/DescontOn
 
 ### Tecnologias adotadas na solução
 
-#### Spring Boot
+<details><summary>Spring Boot</summary>
 <p align="justify">
+
 O Spring Boot é um framework Java open source que tem como objetivo facilitar esse processo em aplicações Java. Trazendo mais agilidade para o processo de 
 desenvolvimento com uma infinidade de ferramentas surge todos os dias visando justamente acelerar o processo de criação e implantação de soluções nos mais variados 
 ambientes.
 
 Para saber mais sobre o Spring Boot, acesse sua [página oficial.](https://spring.io/projects/spring-boot)
+</details>
 
-
-#### Oracle
+<details><summary>Oracle</summary>
 <p align="justify">
 O Banco de dados Oracle (Oracle DB) é um sistema de gerenciamento de banco de dados relacional (RDBMS, Relational Database Management System) da Oracle Corporation. 
 
@@ -224,36 +225,43 @@ Transaction Processing), em data warehouse e na análise de negócios. Equipes d
 necessidades de desenvolvimento, teste, análise e continuidade de negócios.
 
 Saiba mais sobre Oracle em sua [página oficial.](https://www.oracle.com/br/).
+</details>
 
-#### HTML
+<details><summary>HTML</summary>
 <p align="justify">
 O HTML (HyperText Markup Language) é uma linguagem voltada para a web que foi feita para você montar sua própria estrutura de texto e outros elementos para publicá-
 los. Tal linguagem se trabalha em camadas divididas em 3: o próprio HTML, CSS e JavaScript. Estes elementos permitem ao usuário a criação de um website contendo 
 diversas variações de textos, imagens, vídeos, botões, entre outros.
+</details>
 
-#### CSS
+<details><summary>CSS</summary>
 <p align="justify">
 O CSS (Cascading Style Sheet) é uma folha de estilo que trabalha em conjunto com a linguagem HTML e serve para compor a parte visual do site, deixando-a mais atraente. 
 
 Sua principal função é separar e organizar o site, como exemplo, separar a parte escrita da parte visual. É possível fazer uma comparação com um editor de fotos, já 
 que essa style sheet permite a edição, alinhamento, remover, acrescentar ou até mesmo trabalhar com os elementos de uma página web. De acordo com o site WebLink, o CSS 
 também permite fazer animações, efeitos visuais, sites dinâmicos e landings pages.
+</details>
 
-#### JavaScript
+<details><summary>JavaScript</summary>
 <p align="justify">
 JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que simplesmente 
 mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, entre outros, há 
 JavaScript envolvido.
+</details>
 
 ### Contribuições pessoais
 <p align="justify">
 Trabalhei com o papel de Scrum Master, gerenciando e ajudando com impedimentos do time. Como ferramenta de apoio utilizamos o Jira para ter mais vizualição e controle 
 sobre as tarefas e suas divisões para cada membro da equipe.
+<details><summary>Jira - DescontOn</summary>
+Para poder visualizar melhor nossos métodos, tarefas distribuídas e integrantes, [clique aqui.](https://dolphin-database.atlassian.net/jira/software/projects/API/boards/1/roadmap).
+</details>
 
 Fiquei responsável também pela parte de documentar o projeto, sendo no Github algumas descrições mais específicas e menos teóricas, já no documento em .pdf falo melhor 
 sobre a teoria das cores, descrição sobre linguagens e frameworks usados e explico trechos de código.
 
-Na parte de usabilidade, fiquei responsável pelos Wireframes no Figma e fiz cada tela prezando a experiência do usuário (UX - user experience). Utilizamos template 
+Na parte de usabilidade, fiquei responsável pelos Wireframes no Figma e fiz cada tela prezando pela experiência do usuário (UX - user experience). Utilizamos template 
 do Bootstrap e trabalhamos com HTML/ CSS e JavaScript para o desenvolvimento da aplicação web.
 
 No código, fiquei responsável pela criação de DTOs (Data Transfer Object), um padrão de projetos bastante usado em Java para o transporte de dados entre 
