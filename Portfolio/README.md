@@ -277,11 +277,12 @@ A imagem abaixo mostra a página inicial da aplicação, a usabilidade das cores
 
 No código, fiquei responsável pela criação de DTOs (Data Transfer Object), um padrão de projetos bastante usado em Java para o transporte de dados entre 
 diferentes componentes de um sistema, diferentes instâncias ou processos de um sistema distribuído ou diferentes sistemas via serialização.
-
+<details><summary>DTO</summary>
 A ideia consiste basicamente em agrupar um conjunto de atributos numa classe simples de forma a otimizar a comunicação. Além disso, muitas vezes os dados usados na 
 comunicação não refletem exatamente os atributos do seu modelo. Então, um DTO seria uma classe que provê exatamente aquilo que é necessário para um determinado 
 processo.
-
+</details>
+  
 ### Aprendizados Efetivos
 <p align="justify">
 No desenvolvimento dos serviços do DescontOn, aprendi mais sobre desenvolvimento web. Foi a primeira vez na faculdade em que trabalhei de fato com uma aplicação 
