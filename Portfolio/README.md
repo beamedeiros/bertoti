@@ -263,11 +263,17 @@ Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está
 Fiquei responsável também pela parte de documentar o projeto, sendo no Github algumas descrições mais específicas e menos teóricas, já no documento em .pdf falo melhor 
 sobre a teoria das cores, descrição sobre linguagens e frameworks usados e explico trechos de código.
 <details><summary>Documentação</summary>
+Abaixo está o ínicio da documentação feita no Github, para mais detalhes acesse o nosso repositório (https://github.com/DolphinDatabase/DescontOn).
+
 <img src="https://user-images.githubusercontent.com/74321890/203660418-1ba84ed7-a534-48b1-9335-eb8598f4ce4e.png">
 </details>
 
 Na parte de usabilidade, fiquei responsável pelos Wireframes no Figma e fiz cada tela prezando pela experiência do usuário (UX - user experience). Utilizamos template 
 do Bootstrap e trabalhamos com HTML/ CSS e JavaScript para o desenvolvimento da aplicação web.
+<details><summary>Página inicial</summary>
+A imagem abaixo mostra a página inicial da aplicação, a usabilidade das cores (o que transmite para o usuário) e a forma como a barra de navegação é organizada.
+<img src="https://user-images.githubusercontent.com/74321890/203669780-f534d9e9-698e-4341-8459-e819e880ea0a.png">
+</details>
 
 No código, fiquei responsável pela criação de DTOs (Data Transfer Object), um padrão de projetos bastante usado em Java para o transporte de dados entre 
 diferentes componentes de um sistema, diferentes instâncias ou processos de um sistema distribuído ou diferentes sistemas via serialização.
