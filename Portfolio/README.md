@@ -29,7 +29,7 @@ JavaScript foi uma linguagem que aprendi ainda antes da graduação. Meu primeir
 Trabalhei por 1 ano e 8 meses com UX, front-end e requisições HTTP, desenvolvendo uma plataforma web que tem como objetivo automatizar e facilitar a visualização de
 máquinas e processos para os operadores.
 
-Atualmente faço estágio trabalhando com desenvolvimento web com o framework VueJS.
+Atualmente trabalho com desenvolvimento web utilizando o framework VueJS.
 
 #### Projetos Integradores durante a graduação
 <p align="justify">
