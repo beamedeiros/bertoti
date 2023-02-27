@@ -55,6 +55,8 @@ criamos a Athena- Assistente Pessoal de Estudos. O seu diferencial é reunir div
 [<img src="https://user-images.githubusercontent.com/74321890/221615575-d2721589-5e18-438c-b8f3-4e6dfe50d199.png" width="40%">](https://www.youtube.com/watch?v=E_I9MvQs9BE "Athena vídeo Demonstração")
 ##### *Figura 02. Demonstração Athena*
 
+Link do repositório do projeto: https://github.com/silvercod3/Athena
+
 ### Tecnologias adotadas na solução
 
 #### Python
