@@ -45,7 +45,7 @@ Abaixo todos estes projetos serão descritos, detalhando o problema, solução p
 
 Fatec Prof. Jessen Vidal (proposta realizada pelo docente responsável pela disciplina que ordenou o projeto)
 
-![image](https://user-images.githubusercontent.com/74321890/221616914-d4a98ad6-3ec3-4210-b80c-acf1bd272074.jpg)
+![image](https://user-images.githubusercontent.com/74321890/221617740-afbc3809-af92-43e8-bc11-698eeffb4bf4.png)
 ##### *Figura 02. FATEC*
 
 ### Visão do Projeto
