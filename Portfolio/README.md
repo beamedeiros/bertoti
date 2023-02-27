@@ -101,11 +101,9 @@ Além disso, consegui distinguir a velocidade de profundidade e velocidade em di
 
 No mais, temos os pontos específicos abaixo de aprendizados efetivos:
 
-- Reconhecimento de voz: Sei fazer com autonomia
-
-- Envio de e-mail automático: Sei fazer com autonomia
-
-- Desenvolvimento de scripts em Python: Sei fazer com autonomia
+- Reconhecimento de voz: sei fazer com autonomia.
+- Envio de e-mail automático: sei fazer com autonomia.
+- Desenvolvimento de scripts em Python: sei fazer com autonomia.
 
 
 # Projeto 2: 2º semestre de 2021
@@ -150,8 +148,8 @@ Esse projeto foi o primeiro com que tivemos contato com clientes e empresas reai
 Além disso, foi quando coloquei em prática as aulas de banco de dados e utilizei para criar um projeto baseado em situações reais do dia a dia da empresa/ cliente.
 
 - Trabalhar com SGBD: sei fazer com ajuda.
-
 - Criar tabelas, relacionamentos e modelagem: sei fazer com ajuda.
+- Desenvolvimento de scripts em Java: sei fazer com autonomia.
 
 # Projeto 3: 1º semestre de 2022
 
@@ -266,8 +264,8 @@ das requisições possíveis de entrada no serviço desenvolvido.
 Além disso, foi minha primeira vez atuando no papel de Scrum Master e colocando a metodologia ágil em prática.
 
 - Criação de wireframes, desenvolvimento web e ux: sei fazer com autonomia.
-
 - Utilização da metodologia ágil e atuação como SM: sei fazer com autonomia.
+- Utilização de DTO em códigos: sei fazer com autonomia.
 
 <br/>
 
@@ -326,11 +324,9 @@ Minhas áreas de atuação:
 - Mapeamento gráfico: front-end
 
 ## Aprendizados Efetivos
-- Desenvolvimento de serviços CRUD: Sei fazer com ajuda.
-
-- Desenvolvimento utilizando VueJS: Sei fazer com autonomia.
-
-- Utilização de OracleCloud: Sei fazer com autonomia.
+- Desenvolvimento de serviços CRUD: sei fazer com ajuda.
+- Desenvolvimento utilizando VueJS: sei fazer com autonomia.
+- Utilização de OracleCloud: sei fazer com autonomia.
 
 
 # Projeto 5 - 2º semestre de 2021
