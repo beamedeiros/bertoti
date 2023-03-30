@@ -154,8 +154,8 @@ Esse projeto foi o primeiro com que tivemos contato com clientes e empresas reai
 
 Além disso, foi quando coloquei em prática as aulas de banco de dados e utilizei para criar um projeto baseado em situações reais do dia a dia da empresa/ cliente.
 
-- Trabalhar com SGBD: sei fazer com ajuda.
-- Criar tabelas, relacionamentos e modelagem: sei fazer com ajuda.
+- Trabalhar com SGBD: sei fazer com autonomia.
+- Criar tabelas, relacionamentos e modelagem: sei fazer com autonomia.
 - Desenvolvimento de scripts em Java: sei fazer com autonomia.
 
 # Projeto 3: 1º semestre de 2022
@@ -240,7 +240,7 @@ Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está
 Fiquei responsável também pela parte de documentar o projeto, sendo no Github algumas descrições mais específicas e menos teóricas, já no documento em .pdf falo melhor 
 sobre a teoria das cores, descrição sobre linguagens e frameworks usados e explico trechos de código.
 <details><summary>Documentação</summary>
-Abaixo está o ínicio da documentação feita no Github, para mais detalhes acesse o nosso repositório (https://github.com/DolphinDatabase/DescontOn).
+Abaixo está o ínicio da documentação feita no Github, para mais detalhes acesse o nosso repositório: https://github.com/DolphinDatabase/DescontOn
 
 <img src="https://user-images.githubusercontent.com/74321890/203660418-1ba84ed7-a534-48b1-9335-eb8598f4ce4e.png">
 </details>
@@ -331,7 +331,7 @@ Minhas áreas de atuação:
 - Mapeamento gráfico: front-end
 
 ## Aprendizados Efetivos
-- Desenvolvimento de serviços CRUD: sei fazer com ajuda.
+- Desenvolvimento de serviços CRUD: sei fazer com autonomia.
 - Desenvolvimento utilizando VueJS: sei fazer com autonomia.
 - Utilização de OracleCloud: sei fazer com autonomia.
 
