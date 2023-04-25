@@ -82,7 +82,7 @@ seguintes funcionalidades:
 
 Bem similar ao que temos no nosso celular por exemplo, que ele consegue entender o que falou e fazer uma pesquisa, mas no nosso caso ele vai entender e vai poder printar essa mensagem.
 
-Utilizamos PyAudio junto com a biblioteca SpeechRecognition para o transcrição de voz, você vai poder falar no seu microfone e o código vai fazer o reconhecimento de frases no Python e vai escrever o que falou.
+Utilizamos PyAudio junto com a biblioteca SpeechRecognition para a transcrição de voz, você vai poder falar no seu microfone e o código vai fazer o reconhecimento de frases no Python e vai escrever o que falou.
 
 ##### Tkinter
 
@@ -138,15 +138,30 @@ PostgreSQL é um sistema gerenciador de banco de dados objeto relacional (SGBD),
 
 Saiba mais sobre o PostgreSQL em sua [página oficial.](https://www.postgresql.org/)
 
+No nosso projeto utilizamos PostgreSQL para realizar a conexão e efetuar a coleta de métricas.
+
 #### Java
 <p align="justify">
 Utilizamos a linguagem de programação orientada a objetos conhecida por Java. Para a criação dessa linguagem, utilizaram do C++ como base, mas seu principal objetivo 
 era ser uma linguagem de fácil aprendizagem. Seu código é escrito em uma classe onde tudo é objeto, porém números reais e ordinais, valores booleanos e caracteres não 
 são considerados objetos já que não participam de classes por questões de funcionamento.  
 
+SGBD Health utilizou Java para:
+- Tratamento das métricas (histórico, registro, relatórios, disponibilidade, alertas e valores atingidos durante a operação);
+- Tratamento de métricas de forma tabular;
+- Salvar consultas em CSV;
+- Tabular métricas;
+- Coleta periódica de métricas;
+- Histórico de métricas;
+- Relatórios de métricas;
+- Alertas por email;
+- Funcionamento do BD (tempo e quantidade de queries e uso de índices).
+- Ativar ou Desativar Interface Gráfica;
+- Cadastro de dados de conexão dos SGBDs (acesso à estastítica por tabelas).
+
 ### Contribuições pessoais
 
-Como tinha pouco conhecimento com PostgreSQL, na primeira sprint fui encarregada de estudar para que nas próximas pudesse trabalhar com mais autonomia, assim, fiquei responsável e contribui com o desenvolvimento do banco de dados.
+Como tinha pouco conhecimento com PostgreSQL, na primeira sprint fui encarregada de estudar para que nas próximas pudesse trabalhar com mais autonomia, assim, fiquei responsável e contribui com o desenvolvimento do banco de dados e algumas funcionalidades em Java como relatórios de métricas e alertas por email.
 
 ### Aprendizados Efetivos
 
@@ -186,38 +201,68 @@ Link do repositório do projeto: https://github.com/DolphinDatabase/DescontOn
 <details><summary>Spring Boot</summary>
 <p align="justify">
 
-O Spring Boot é um framework Java open source que tem como objetivo facilitar esse processo em aplicações Java. Trazendo mais agilidade para o processo de 
+>O Spring Boot é um framework Java open source que tem como objetivo facilitar esse processo em aplicações Java. Trazendo mais agilidade para o processo de 
 desenvolvimento com uma infinidade de ferramentas surge todos os dias visando justamente acelerar o processo de criação e implantação de soluções nos mais variados 
 ambientes.
 
-Para saber mais sobre o Spring Boot, acesse sua [página oficial.](https://spring.io/projects/spring-boot)
+Utilizamos Spring Boot para desenvolver Java com uma interface gráfica, sendo o primeiro projeto que trabalhamos com desenvolvimento web.
 </details>
 
 <details><summary>Oracle</summary>
 <p align="justify">
-O Banco de dados Oracle (Oracle DB) é um sistema de gerenciamento de banco de dados relacional (RDBMS, Relational Database Management System) da Oracle Corporation. 
-
+>O Banco de dados Oracle (Oracle DB) é um sistema de gerenciamento de banco de dados relacional (RDBMS, Relational Database Management System) da Oracle Corporation. 
 Oracle DB é um dos mais utilizados no mercado devido a sua capacidade de orientar aplicativos corporativos no processamento de transações online (OLTP, Online 
 Transaction Processing), em data warehouse e na análise de negócios. Equipes de TI também precisam de desempenho sob demanda desses bancos de dados para as 
 necessidades de desenvolvimento, teste, análise e continuidade de negócios.
 
-Saiba mais sobre Oracle em sua [página oficial.](https://www.oracle.com/br/)
+Utilizamos o SGBD Oracle para poder armazenar os dados da aplicação, como cadastro, remoção e edição.
+
+Aqui está um **exemplo** do modelo relacional:
+
+<img src="https://github.com/DolphinDatabase/DescontOn/raw/ebf0051ea024984c038dce84c2d153560b996701/Documenta%C3%A7%C3%A3o/SPRINT3/Imagens/Modelo_Relacional.jpeg">
 </details>
 
 <details><summary>HTML</summary>
 <p align="justify">
-O HTML (HyperText Markup Language) é uma linguagem voltada para a web que foi feita para você montar sua própria estrutura de texto e outros elementos para publicá-
+>O HTML (HyperText Markup Language) é uma linguagem voltada para a web que foi feita para você montar sua própria estrutura de texto e outros elementos para publicá-
 los. Tal linguagem se trabalha em camadas divididas em 3: o próprio HTML, CSS e JavaScript. Estes elementos permitem ao usuário a criação de um website contendo 
 diversas variações de textos, imagens, vídeos, botões, entre outros.
+
+Utilizamos o HTML para desenvolver o front-end da aplicação, onde montamos uma interface para que haja a interativadade com o cliente e ele consiga fazer com autonomia as seguintes funcionalidades:
+- Cadastro de Produtos
+- Listar Produtos
+- Remover Produtos Cadastrados
+- Arquivar e Desarquivar Produtos Cadastrados (para armazenar dados dos produtos que já foram comprados)
+- Filtrar a Listagem de Produtos (produtos disponíveis ou arquivados)
+- Editar um Produto Cadastrado
+- Adicionar Produtos na Sacola
+- Alterar a Quantidade de Produtos na Sacola
+- Remover Produtos da Sacola
+- Finalizar Compra
+- Cadastro de Promoções
+- Listar Promoções
+- Remover Promoções
+- Ativar ou Interromper Promoções
+- Filtrar a Listagem de Promoções (promoções ativas ou interrompidas)
+- Editar uma Promoção
+- Aplicar Descontos na Sacola de Compras
+- Criar Mecânicas com Modelos Lógicos
+- Cadastrar Produtos em (N) Promoções
+- Listar desconto por produto na Sacola de Compras
+- Visualizar promoções por produto na Sacola de Compras
 </details>
 
 <details><summary>CSS</summary>
 <p align="justify">
-O CSS (Cascading Style Sheet) é uma folha de estilo que trabalha em conjunto com a linguagem HTML e serve para compor a parte visual do site, deixando-a mais atraente. 
-
+>O CSS (Cascading Style Sheet) é uma folha de estilo que trabalha em conjunto com a linguagem HTML e serve para compor a parte visual do site, deixando-a mais atraente. 
 Sua principal função é separar e organizar o site, como exemplo, separar a parte escrita da parte visual. É possível fazer uma comparação com um editor de fotos, já 
 que essa style sheet permite a edição, alinhamento, remover, acrescentar ou até mesmo trabalhar com os elementos de uma página web. De acordo com o site WebLink, o CSS 
 também permite fazer animações, efeitos visuais, sites dinâmicos e landings pages.
+
+No projeto, utilizamos CSS juntamente com o HTML para dar uma etilização da interface e torná-la mais agradável para o usuário. Abaixo está a tela home da aplicação.
+
+<img src="
+
 </details>
 
 <details><summary>JavaScript</summary>
