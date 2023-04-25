@@ -260,7 +260,7 @@ No projeto, utilizamos CSS juntamente com o HTML para dar uma estilização da i
 mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, entre outros, há 
 JavaScript envolvido.
   
-Utilizamos JavaScript e requisições HTTP com Java, para desenvolver as seguintes funcionalidades no front-end:
+Utilizamos JavaScript e requisições HTTP, para desenvolver as seguintes funcionalidades no front-end:
 - Cadastro de Produtos
 - Listar Produtos
 - Remover Produtos Cadastrados
