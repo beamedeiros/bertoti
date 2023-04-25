@@ -61,9 +61,10 @@ Link do repositório do projeto: https://github.com/silvercod3/Athena
 
 ### Tecnologias adotadas na solução
 
-#### Python
+<details><summary>Python</summary>
+<p align="justify">
 
-O Python é uma linguagem de programação amplamente usada em aplicações da Web, desenvolvimento de software, ciência de dados e machine learning (ML). Os 
+>O Python é uma linguagem de programação amplamente usada em aplicações da Web, desenvolvimento de software, ciência de dados e machine learning (ML). Os 
 desenvolvedores usam o Python porque é eficiente e fácil de aprender e pode ser executada em muitas plataformas diferentes. O software Python pode ser baixado 
 gratuitamente, integra-se bem a todos os tipos de sistema e agiliza o desenvolvimento.
 
@@ -77,21 +78,26 @@ seguintes funcionalidades:
 - Controle de faltas: para evitar uma reprovação, alerta o(a) estudante sobre quantas faltas ainda podem ser registradas (com contagem regressiva, de acordo com valor previamente cadastrado pelo(a) estudante);
 - Dicas: dicas sobre como melhorar a efetividade dos estudos, concentração, absorção de conteúdo e organização;
 - Metas de estudos e gráficos de desempenho: planejamento de horas a estudar semanal ou mensal, que auxilia no progresso, juntamente com visualização do desempenho através de gráficos.
+</details>
 
-##### PyAudio
+<details><summary>PyAudio</summary>
+<p align="justify">
 
-Bem similar ao que temos no nosso celular por exemplo, que ele consegue entender o que falou e fazer uma pesquisa, mas no nosso caso ele vai entender e vai poder printar essa mensagem.
+>Bem similar ao que temos no nosso celular por exemplo, que ele consegue entender o que falou e fazer uma pesquisa, mas no nosso caso ele vai entender e vai poder printar essa mensagem.
 
 Utilizamos PyAudio junto com a biblioteca SpeechRecognition para a transcrição de voz, você vai poder falar no seu microfone e o código vai fazer o reconhecimento de frases no Python e vai escrever o que falou.
+</details>
 
-##### Tkinter
+<details><summary>Tkinter</summary>
+<p align="justify">  
+
+>Tkinter é uma biblioteca da linguagem Python que acompanha a instalação padrão e permite desenvolver interfaces gráficas. Isso significa que qualquer computador que tenha o interpretador Python instalado é capaz de criar interfaces gráficas usando o Tkinter, com exceção de algumas distribuições Linux, exigindo que seja feita o download do módulo separadamente.
 
 As interfaces gráficas do usuário (GUI – Graphic User Interface) são bastante populares no uso de softwares em geral, e os programadores devem estar aptos a trabalhar com a criação de interfaces, já que torna o uso mais fácil além de aumentar a produtividade.
-
-Tkinter é uma biblioteca da linguagem Python que acompanha a instalação padrão e permite desenvolver interfaces gráficas. Isso significa que qualquer computador que tenha o interpretador Python instalado é capaz de criar interfaces gráficas usando o Tkinter, com exceção de algumas distribuições Linux, exigindo que seja feita o download do módulo separadamente.
-
+  
 Utilizamos o Tkinter para montar a interface do usuário, mais especificamente mostrar o gráfico de horas estudadas por matéria.
-
+</details>
+  
 ### Contribuições pessoais
 
 Fui responsável por pesquisas sobre Python, reconhecimento de voz, interface gráfica e código de envio de e-mail para o estudante/ usuário.
@@ -132,17 +138,18 @@ Link do repositório do projeto: https://github.com/DolphinDatabase/SGBD_Health
 
 ### Tecnologias adotadas na solução
 
-#### PostgreSQL
+<details><summary>PostgreSQL</summary>
+<p align="justify">  
 
-PostgreSQL é um sistema gerenciador de banco de dados objeto relacional (SGBD), desenvolvido como projeto de código aberto.
-
-Saiba mais sobre o PostgreSQL em sua [página oficial.](https://www.postgresql.org/)
+>PostgreSQL é um sistema gerenciador de banco de dados objeto relacional (SGBD), desenvolvido como projeto de código aberto.
 
 No nosso projeto utilizamos PostgreSQL para realizar a conexão e efetuar a coleta de métricas.
+</details>
 
-#### Java
-<p align="justify">
-Utilizamos a linguagem de programação orientada a objetos conhecida por Java. Para a criação dessa linguagem, utilizaram do C++ como base, mas seu principal objetivo 
+<details><summary>Java</summary>
+<p align="justify">  
+  
+>Utilizamos a linguagem de programação orientada a objetos conhecida por Java. Para a criação dessa linguagem, utilizaram do C++ como base, mas seu principal objetivo 
 era ser uma linguagem de fácil aprendizagem. Seu código é escrito em uma classe onde tudo é objeto, porém números reais e ordinais, valores booleanos e caracteres não 
 são considerados objetos já que não participam de classes por questões de funcionamento.  
 
@@ -158,6 +165,7 @@ SGBD Health utilizou Java para:
 - Funcionamento do BD (tempo e quantidade de queries e uso de índices).
 - Ativar ou Desativar Interface Gráfica;
 - Cadastro de dados de conexão dos SGBDs (acesso à estastítica por tabelas).
+</details>
 
 ### Contribuições pessoais
 
@@ -210,6 +218,7 @@ Utilizamos Spring Boot para desenvolver Java com uma interface gráfica, sendo o
 
 <details><summary>Oracle</summary>
 <p align="justify">
+  
 >O Banco de dados Oracle (Oracle DB) é um sistema de gerenciamento de banco de dados relacional (RDBMS, Relational Database Management System) da Oracle Corporation. 
 Oracle DB é um dos mais utilizados no mercado devido a sua capacidade de orientar aplicativos corporativos no processamento de transações online (OLTP, Online 
 Transaction Processing), em data warehouse e na análise de negócios. Equipes de TI também precisam de desempenho sob demanda desses bancos de dados para as 
@@ -224,11 +233,34 @@ Aqui está um **exemplo** do modelo relacional:
 
 <details><summary>HTML</summary>
 <p align="justify">
+  
 >O HTML (HyperText Markup Language) é uma linguagem voltada para a web que foi feita para você montar sua própria estrutura de texto e outros elementos para publicá-
 los. Tal linguagem se trabalha em camadas divididas em 3: o próprio HTML, CSS e JavaScript. Estes elementos permitem ao usuário a criação de um website contendo 
 diversas variações de textos, imagens, vídeos, botões, entre outros.
 
-Utilizamos o HTML para desenvolver o front-end da aplicação, onde montamos uma interface para que haja a interativadade com o cliente e ele consiga fazer com autonomia as seguintes funcionalidades:
+Utilizamos o HTML para desenvolver o front-end da aplicação, onde montamos uma interface para que haja a interativadade com o cliente.
+</details>
+
+<details><summary>CSS</summary>
+<p align="justify">
+  
+>O CSS (Cascading Style Sheet) é uma folha de estilo que trabalha em conjunto com a linguagem HTML e serve para compor a parte visual do site, deixando-a mais atraente. 
+Sua principal função é separar e organizar o site, como exemplo, separar a parte escrita da parte visual. É possível fazer uma comparação com um editor de fotos, já 
+que essa style sheet permite a edição, alinhamento, remover, acrescentar ou até mesmo trabalhar com os elementos de uma página web. De acordo com o site WebLink, o CSS 
+também permite fazer animações, efeitos visuais, sites dinâmicos e landings pages.
+
+No projeto, utilizamos CSS juntamente com o HTML para dar uma estilização da interface e torná-la mais agradável para o usuário.
+
+</details>
+
+<details><summary>JavaScript</summary>
+<p align="justify">
+  
+>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que simplesmente 
+mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, entre outros, há 
+JavaScript envolvido.
+  
+Utilizamos JavaScript e requisições HTTP com Java, para desenvolver as seguintes funcionalidades no front-end:
 - Cadastro de Produtos
 - Listar Produtos
 - Remover Produtos Cadastrados
@@ -252,30 +284,9 @@ Utilizamos o HTML para desenvolver o front-end da aplicação, onde montamos uma
 - Visualizar promoções por produto na Sacola de Compras
 </details>
 
-<details><summary>CSS</summary>
-<p align="justify">
->O CSS (Cascading Style Sheet) é uma folha de estilo que trabalha em conjunto com a linguagem HTML e serve para compor a parte visual do site, deixando-a mais atraente. 
-Sua principal função é separar e organizar o site, como exemplo, separar a parte escrita da parte visual. É possível fazer uma comparação com um editor de fotos, já 
-que essa style sheet permite a edição, alinhamento, remover, acrescentar ou até mesmo trabalhar com os elementos de uma página web. De acordo com o site WebLink, o CSS 
-também permite fazer animações, efeitos visuais, sites dinâmicos e landings pages.
-
-No projeto, utilizamos CSS juntamente com o HTML para dar uma etilização da interface e torná-la mais agradável para o usuário. Abaixo está a tela home da aplicação.
-
-<img src="
-
-</details>
-
-<details><summary>JavaScript</summary>
-<p align="justify">
-JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que simplesmente 
-mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, entre outros, há 
-JavaScript envolvido.
-</details>
-
 ### Contribuições pessoais
 <p align="justify">
-Trabalhei com o papel de Scrum Master, gerenciando e ajudando com impedimentos do time. Como ferramenta de apoio utilizamos o Jira para ter mais visualização e controle 
-sobre as tarefas e suas divisões para cada membro da equipe.
+Trabalhei com o papel de Scrum Master, gerenciando e ajudando com impedimentos do time. Como ferramenta de apoio utilizamos o Jira para ter mais visualização e controle sobre as tarefas e suas divisões para cada membro da equipe.
 <details><summary>Jira - DescontOn</summary>
 Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está o roadmap do projeto. 
 
@@ -297,16 +308,44 @@ A imagem abaixo mostra a página inicial da aplicação, a usabilidade das cores
 <img src="https://user-images.githubusercontent.com/74321890/203669780-f534d9e9-698e-4341-8459-e819e880ea0a.png">
 </details>
 
-No código, fiquei responsável pela criação de DTOs (Data Transfer Object), um padrão de projetos bastante usado em Java para o transporte de dados entre 
+No código, além de trabalhar com o front-end, fiquei responsável pela criação de DTOs (Data Transfer Object), um padrão de projetos bastante usado em Java para o transporte de dados entre 
 diferentes componentes de um sistema, diferentes instâncias ou processos de um sistema distribuído ou diferentes sistemas via serialização.
 <details><summary>DTO</summary>
-A ideia consiste basicamente em agrupar um conjunto de atributos numa classe simples de forma a otimizar a comunicação. Além disso, muitas vezes os dados usados na 
+  
+>A ideia consiste basicamente em agrupar um conjunto de atributos numa classe simples de forma a otimizar a comunicação. Além disso, muitas vezes os dados usados na 
 comunicação não refletem exatamente os atributos do seu modelo. Então, um DTO seria uma classe que provê exatamente aquilo que é necessário para um determinado 
 processo.
+  
+Abaixo está um exemplo de ProdutoDTO:
+  
+  ```
+  @Data
+  @AllArgsConstructor
+  public class ProdutoDTO {
+    private Long id;
+    private String nome;
+    private Double valor;
+    private String categoria;
+    private Integer status;
+  }
+  ```
+  
+E a um exemplo da chamada do DTO dentro de ProdutoController:
+  
+ ```
+  @PostMapping
+  public ProdutoDTO create(@RequestBody Produto produto){
+    Produto save = produtoRepositorio.save(produto);
+    ProdutoDTO res = new ProdutoDTO(save.getId(),save.getNome(),save.getValor(),save.getCategoria(),save.getStatus());
+    return res;
+  }
+ ```
+  
 </details>
   
 ### Aprendizados Efetivos
 <p align="justify">
+  
 No desenvolvimento dos serviços do DescontOn, aprendi mais sobre desenvolvimento web. Foi a primeira vez na faculdade em que trabalhei de fato com uma aplicação 
 front-end separada dos serviços chamados de "back-end".
 
