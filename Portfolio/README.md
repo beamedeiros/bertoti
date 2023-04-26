@@ -148,7 +148,7 @@ def record_audio(ask=""):
 ```
 </details>
 
-Também fui encarregada de desenvolver a interface, utilizando gráficos, para que o usuário conseguisse observar sua evolução nas metas
+Também fui encarregada de desenvolver a interface, utilizando gráficos, para que o usuário conseguisse observar sua evolução nas metas.
 
 <details><summary>Interface</summary>
 
