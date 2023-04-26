@@ -80,12 +80,14 @@ seguintes funcionalidades:
 - Metas de estudos e gráficos de desempenho: planejamento de horas a estudar semanal ou mensal, que auxilia no progresso, juntamente com visualização do desempenho através de gráficos.
 </details>
 
-<details><summary>PyAudio</summary>
+<details><summary>PyAudio e Pydub</summary>
 <p align="justify">
 
 >Bem similar ao que temos no nosso celular por exemplo, que ele consegue entender o que falou e fazer uma pesquisa, mas no nosso caso ele vai entender e vai poder printar essa mensagem.
 
-Utilizamos PyAudio junto com a biblioteca SpeechRecognition para a transcrição de voz, você vai poder falar no seu microfone e o código vai fazer o reconhecimento de frases no Python e vai escrever o que falou.
+>A biblioteca Pydub, foi criada para manipulação de áudio de forma simples e alto nível. Com ela podemos fazer conversões de formatos, juntar ou dividir arquivos de áudio entre outras atividades.
+
+Utilizamos PyAudio e Pydub junto com a biblioteca SpeechRecognition para a transcrição de voz, você vai poder falar no seu microfone e o código vai fazer o reconhecimento de frases no Python e vai escrever o que falou.
 </details>
 
 <details><summary>Tkinter</summary>
@@ -100,7 +102,80 @@ Utilizamos o Tkinter para montar a interface do usuário, mais especificamente m
   
 ### Contribuições pessoais
 
-Fui responsável por pesquisas sobre Python, reconhecimento de voz, interface gráfica e código de envio de e-mail para o estudante/ usuário.
+Fui responsável por pesquisas sobre Python, como é sua estrutura, bibliotecas para uso e lógica de programação. 
+
+No reconhecimento de voz, implementei a biblioteca SpeechRecognition, para o reconhecimento de voz do usuário/ estudante.
+<details><summary>Código</summary>
+
+```
+import speech_recognition as sr
+
+engine = pyttsx3.init()
+r = sr.Recognizer()  # inicializa o reconhecedor
+
+# ouve o áudio e converte para texto:
+def record_audio(ask=""):
+    try:
+        with sr.Microphone() as source:
+            if ask:
+                speak(ask)
+            audio = r.listen(source, 5, 5)
+            r.adjust_for_ambient_noise(source, duration=1)
+            voice_data = ''
+            try:
+                voice_data = r.recognize_google(audio, language='pt-BR')
+            except sr.UnknownValueError:
+                time.sleep(10)
+                print('Deu erro aquiiiiiii')
+                speak(error)
+                exit()
+            except sr.RequestError:
+                speak('Desculpe, serviço indisponível no momento')
+            except sr.WaitTimeoutError:
+                print('Serviço indisponível no momento, tente novamente !')
+                exit()
+            print(">>", voice_data.lower())
+            return voice_data.lower()
+    except TypeError:
+        speak('tem alguém aí ?')
+        time.sleep(6)
+        exit()
+    except sr.WaitTimeoutError:
+        speak('tem alguém aí ?')
+        time.sleep(5)
+        exit()
+
+```
+</details>
+
+Também fui encarregada de desenvolver a interface, utilizando gráficos, para que o usuário conseguisse observar sua evolução nas metas
+
+<details><summary>Interface</summary>
+
+Abaixo está o código utilizado para gerar o gráfico utilizando informações que o usuário passa para a aplicação por meio de comandos de voz.
+
+```
+horas_pretendidas = int(input('Quantas horas você pretende estudar? '))
+horas_cumpridas = int(input('Quantas horas você estudou? '))
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+horas = ['Horas Pretendidas', 'Horas Cumpridas']
+horas2 = [horas_pretendidas, horas_cumpridas]
+
+plt.bar(horas, horas2, color='purple')
+
+plt.xticks(horas)
+plt.ylabel('HORAS')
+plt.xlabel('HORAS DE ESTUDO')
+plt.title('METAS DE ESTUDO')
+plt.show()
+```
+
+<img src="https://user-images.githubusercontent.com/74321890/234713583-e0115e73-e159-4742-b333-a15939ba2bf2.png">
+
+</details>
 
 ### Aprendizados Efetivos HS
 
@@ -120,7 +195,6 @@ No mais, temos os pontos específicos abaixo de aprendizados efetivos:
 
 
 # Projeto 2: 2º semestre de 2021
-
 
 ### Parceiro Acadêmico
 Necto Systems <br/>
@@ -169,7 +243,19 @@ SGBD Health utilizou Java para:
 
 ### Contribuições pessoais
 
-Como tinha pouco conhecimento com PostgreSQL, na primeira sprint fui encarregada de estudar para que nas próximas pudesse trabalhar com mais autonomia, assim, fiquei responsável e contribui com o desenvolvimento do banco de dados e algumas funcionalidades em Java como relatórios de métricas e alertas por email.
+Como tinha pouco conhecimento com PostgreSQL, na primeira sprint fui encarregada de estudar para que nas próximas pudesse trabalhar com mais autonomia, assim, fiquei responsável e contribui com o desenvolvimento e conexão com o banco de dados.
+
+<details><summary>Conexão</summary>
+<p align="justify"> 
+
+```
+connection=jdbc:postgresql://localhost:5432/postgres
+user=postgres
+pass=postgres
+```
+</details>
+
+Para o desenvolvimento, fiquei responsável por 
 
 ### Aprendizados Efetivos
 
