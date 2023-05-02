@@ -26,8 +26,7 @@ Por conta desta experiência, Java e seu ecossistema para desenvolvimento web é
 <p align="justify">
 JavaScript foi uma linguagem que aprendi ainda antes da graduação. Meu primeiro estágio (técnico em informática) na Embraer possibilitou que eu trabalhasse com JavaScript junto com o framework React.
 
-Trabalhei por 1 ano e 8 meses com UX, front-end e requisições HTTP, desenvolvendo uma plataforma web que tem como objetivo automatizar e facilitar a visualização de
-máquinas e processos para os operadores.
+Trabalhei por 1 ano e 8 meses com UX, front-end e requisições HTTP, desenvolvendo uma plataforma web que tem como objetivo automatizar e facilitar a visualização de máquinas e processos para os operadores.
 
 Atualmente trabalho com desenvolvimento web utilizando o framework VueJS.
 
@@ -107,6 +106,8 @@ Fui responsável por pesquisas sobre Python, como é sua estrutura, bibliotecas 
 No reconhecimento de voz, implementei a biblioteca SpeechRecognition, para o reconhecimento de voz do usuário/ estudante.
 <details><summary>Código</summary>
 
+>A função record_audio é responsável por gravar o áudio do usuário usando o microfone e, em seguida, converter o áudio em texto. Dentro da função, é inicializado um objeto Recognizer da biblioteca SpeechRecognition, que é responsável por reconhecer a fala a partir do áudio gravado. O método listen do objeto Recognizer é usado para gravar o áudio do usuário, e os parâmetros duration e timeout definem, respectivamente, a duração máxima da gravação e o tempo máximo que o método deve esperar antes de retornar uma exceção. O método adjust_for_ambient_noise é usado para ajustar o nível de ruído de fundo antes de iniciar a gravação do áudio. Em seguida, o áudio é convertido em texto usando o serviço de reconhecimento de fala da Google, especificado pelo método recognize_google.
+  
 ```
 import speech_recognition as sr
 
@@ -152,7 +153,7 @@ Também fui encarregada de desenvolver a interface, utilizando gráficos, para q
 
 <details><summary>Interface</summary>
 
-Abaixo está o código utilizado para gerar o gráfico utilizando informações que o usuário passa para a aplicação por meio de comandos de voz.
+>O código define duas listas de strings, horas e horas2, que contêm as legendas e valores das barras do gráfico.  As listas são então passadas para a função plt.bar do Matplotlib, que cria um gráfico de barras com as horas pretendidas e cumpridas. O resultado é um gráfico simples de barras que mostra a quantidade de horas pretendidas e cumpridas de estudo. A barra correspondente às horas pretendidas é exibida em roxo, enquanto a barra correspondente às horas cumpridas é exibida em azul.
 
 ```
 horas_pretendidas = int(input('Quantas horas você pretende estudar? '))
@@ -166,11 +167,11 @@ horas2 = [horas_pretendidas, horas_cumpridas]
 
 plt.bar(horas, horas2, color='purple')
 
-plt.xticks(horas)
-plt.ylabel('HORAS')
-plt.xlabel('HORAS DE ESTUDO')
-plt.title('METAS DE ESTUDO')
-plt.show()
+plt.xticks(horas) #define as etiquetas do eixo x do gráfico para serem as horas pretendidas e cumpridas
+plt.ylabel('HORAS') #rótulo do eixo y do gráfico, que é "HORAS"
+plt.xlabel('HORAS DE ESTUDO') #rótulo do eixo x do gráfico, que é "HORAS DE ESTUDO"
+plt.title('METAS DE ESTUDO') #título do gráfico como "METAS DE ESTUDO".
+plt.show() #exibe o gráfico
 ```
 
 <img src="https://user-images.githubusercontent.com/74321890/234713583-e0115e73-e159-4742-b333-a15939ba2bf2.png">
