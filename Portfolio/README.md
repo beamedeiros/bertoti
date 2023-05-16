@@ -608,7 +608,6 @@ O trecho de código a seguir mostra como montamos o componente de boas-vindas à
   </section>
   <!-- End Sobre -->
 ```
-	
 </details>
 	
 Trabalhei com o papel de Scrum Master, gerenciando e ajudando com impedimentos do time. Como ferramenta de apoio utilizamos o Jira para ter mais visualização e controle sobre as tarefas e suas divisões para cada membro da equipe.
@@ -620,7 +619,7 @@ Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está
 
 Fiquei responsável também pela parte de documentar o projeto, sendo no Github algumas descrições mais específicas e menos teóricas, já no documento em .pdf falo melhor sobre a teoria das cores, descrição sobre linguagens e frameworks usados e explico trechos de código.
 <details><summary>Documentação</summary>
-Abaixo está o ínicio da documentação feita no Github, para mais detalhes acesse o nosso repositório: https://github.com/DolphinDatabase/DescontOn
+Abaixo está o ínicio da documentação feita no Github, para mais detalhes acesse o nosso [repositório](https://github.com/DolphinDatabase/DescontOn).
 
 <img src="https://user-images.githubusercontent.com/74321890/203660418-1ba84ed7-a534-48b1-9335-eb8598f4ce4e.png">
 </details>
@@ -629,7 +628,7 @@ Abaixo está o ínicio da documentação feita no Github, para mais detalhes ace
 <p align="justify">
   
 No desenvolvimento dos serviços do DescontOn, aprendi mais sobre desenvolvimento web. Foi a primeira vez na faculdade em que trabalhei de fato com uma aplicação 
-front-end separada dos serviços chamados de "back-end".
+front-end separada dos serviços chamados de back-end.
 
 Por conta desta experiência, fui inserida a um novo nível de exigência para a construção de um sistema web, tendo que me preocupar com o formato e conteúdo específico 
 das requisições possíveis de entrada no serviço desenvolvido.
@@ -663,15 +662,12 @@ e exclusão de outros usuários; o suporte ficará responsável pelo CRUD de fal
 A MCS (Management and Control System) trouxe de uma forma fácil e rápida o mais importante: o mapeamento gráfico de anomalias nas silhuetas.
   
 <p align="justify">
-O Mapemamento de anomalias consiste em durante ou após uma inspeção, o suporte conseguirá fazer o upload da silhueta e adicionar as falhas (específicas do chamado) 
-encontradas em formas e tamanhos diferentes para uma melhor identificação da posição e tamanho, facilitando na identificação de quantidade e quais materiais serão 
+O Mapemamento de anomalias consiste em durante ou após uma inspeção, o suporte conseguirá fazer o upload da silhueta e adicionar as falhas (específicas do chamado) encontradas em formas e tamanhos diferentes para uma melhor identificação da posição e tamanho, facilitando na identificação de quantidade e quais materiais serão 
 utilizados para a solução dessas falhas e também no cálculo do orçamento.
 
 Sua interface web facilita a gestão de dados e dá autonomia aos usuários dessa aplicação para que possam atuar com desenvoltura dentro das permissões concedidas. 
 
 [<img src="https://github.com/DolphinDatabase/MCS/blob/main/Imagens/MCS_Youtube.png" width="40%">](https://www.youtube.com/watch?v=omSyXxA3AYI&list=PLUOBqJKbljZv85QQ4B3ExV93PQVVf8n2o "MCS vídeo Demonstração")
-
-##### *Figura 07. Demonstração MCS*
 
 Link do repositório do projeto: https://github.com/DolphinDatabase/MCS
 
