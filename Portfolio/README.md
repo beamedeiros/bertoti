@@ -251,24 +251,6 @@ Desenvolvi em java o código que cria um arquivo csv com as informações sobre 
 >O código apresentado é uma implementação em Java para manipulação e exibição de dados em formato CSV. Ele possui uma classe Csv que contém métodos para definir configurações de exibição, adicionar dados e exibir o conteúdo em formato de tabela.
   
 ```
-package conectar;
-
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.Reader;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
 public class Csv {
 	
 	  private static final String HORIZONTAL_SEP = "-";
@@ -358,7 +340,7 @@ public class Csv {
 >O método selecionar que recebe uma consulta SQL, uma conexão com um banco de dados, informações sobre as colunas que devem ser selecionadas, um título para o arquivo CSV a ser salvo, um título para a exibição na console, um caminho para o arquivo CSV, um parâmetro de exibição na console e um parâmetro de salvamento em arquivo.
   
 ```
-    protected static void selecionar(String select, Connection c, int i, int j, String[] quantidadeColuna,
+protected static void selecionar(String select, Connection c, int i, int j, String[] quantidadeColuna,
 			String tituloCsv, String[] tituloCosole, String filepath, int print, int salvar)
 			throws SQLException, IOException {
 
@@ -454,7 +436,6 @@ public class Csv {
 	}
 
 }
-
 ```
 >Esse método executa a consulta SQL e, dependendo dos parâmetros, exibe os resultados na console e/ou salva em um arquivo CSV. Ele utiliza a classe Csv para formatar e exibir os resultados na console e para salvar em um arquivo CSV.
   
@@ -611,7 +592,23 @@ do Bootstrap e trabalhamos com HTML/ CSS e JavaScript para o desenvolvimento da 
 A imagem abaixo mostra a página inicial da aplicação, a usabilidade das cores (o que transmite para o usuário) e a forma como a barra de navegação é organizada.
 <img src="https://user-images.githubusercontent.com/74321890/203669780-f534d9e9-698e-4341-8459-e819e880ea0a.png">
 
-O trecho de código abaixo 
+>O código HTML fornecido é a estrutura de uma página web para o DescontOn. A página apresenta um cabeçalho com um menu de navegação, um banner de boas-vindas com uma breve descrição do DescontOn, seções de benefícios e funcionalidades do sistema, e um rodapé com um link para o repositório do projeto no GitHub. O código faz uso de bibliotecas como Bootstrap e Boxicons para estilização e funcionalidades adicionais, além de referenciar arquivos CSS e JavaScript específicos. No geral, o código estrutura de forma organizada as diferentes seções e funcionalidades do DescontOn, fornecendo uma experiência intuitiva para os usuários.
+
+O trecho de código a seguir mostra como montamos o componente de boas-vindas à aplicação.
+
+```
+  <!-- ======= Sobre Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1>Bem-Vindo ao&nbsp; <span>DescontOn</span></h1>
+      <h2>Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e
+        de rápida atualização no sistema.</h2>
+      <a href="#saiba-mais" class="btn-get-started scrollto">Saiba Mais</a>
+    </div>
+  </section>
+  <!-- End Sobre -->
+```
+	
 </details>
 	
 Trabalhei com o papel de Scrum Master, gerenciando e ajudando com impedimentos do time. Como ferramenta de apoio utilizamos o Jira para ter mais visualização e controle sobre as tarefas e suas divisões para cada membro da equipe.
@@ -621,8 +618,7 @@ Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está
 <img src="https://user-images.githubusercontent.com/74321890/203658630-474dbc4f-a670-470a-836e-d75cd28cf59a.jpeg">
 </details>
 
-Fiquei responsável também pela parte de documentar o projeto, sendo no Github algumas descrições mais específicas e menos teóricas, já no documento em .pdf falo melhor 
-sobre a teoria das cores, descrição sobre linguagens e frameworks usados e explico trechos de código.
+Fiquei responsável também pela parte de documentar o projeto, sendo no Github algumas descrições mais específicas e menos teóricas, já no documento em .pdf falo melhor sobre a teoria das cores, descrição sobre linguagens e frameworks usados e explico trechos de código.
 <details><summary>Documentação</summary>
 Abaixo está o ínicio da documentação feita no Github, para mais detalhes acesse o nosso repositório: https://github.com/DolphinDatabase/DescontOn
 
