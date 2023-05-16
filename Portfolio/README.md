@@ -619,7 +619,7 @@ Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está
 
 Fiquei responsável também pela parte de documentar o projeto, sendo no Github algumas descrições mais específicas e menos teóricas, já no documento em .pdf falo melhor sobre a teoria das cores, descrição sobre linguagens e frameworks usados e explico trechos de código.
 <details><summary>Documentação</summary>
-Abaixo está o ínicio da documentação feita no Github, para mais detalhes acesse o nosso [repositório](https://github.com/DolphinDatabase/DescontOn).
+Abaixo está o ínicio da documentação feita no Github, para mais detalhes acesse o nosso github: https://github.com/DolphinDatabase/DescontOn.
 
 <img src="https://user-images.githubusercontent.com/74321890/203660418-1ba84ed7-a534-48b1-9335-eb8598f4ce4e.png">
 </details>
