@@ -10,8 +10,6 @@ Tenho 20 anos e trabalho como estagiária na empresa Sophia, responsável por Ge
 
 <img src="https://user-images.githubusercontent.com/74321890/200823701-ea0c19fc-e79b-4e1d-9361-1d8fa1cade6a.jpg" width="300"/>
 
-##### *Figura 00. Eu*
-
 ### Meus principais conhecimentos
 
 #### Java
@@ -45,7 +43,6 @@ Abaixo todos estes projetos serão descritos, detalhando o problema, solução p
 Fatec Prof. Jessen Vidal (proposta realizada pelo docente responsável pela disciplina que ordenou o projeto)
 
 ![image](https://user-images.githubusercontent.com/74321890/221617740-afbc3809-af92-43e8-bc11-698eeffb4bf4.png)
-##### *Figura 01. FATEC*
 
 ### Visão do Projeto
 
@@ -54,7 +51,6 @@ Com o propósito de trazer para os estudantes em geral uma forma mais centraliza
 criamos a Athena- Assistente Pessoal de Estudos. O seu diferencial é reunir diversas ferramentas úteis em um único lugar.
 
 [<img src="https://user-images.githubusercontent.com/74321890/221615575-d2721589-5e18-438c-b8f3-4e6dfe50d199.png" width="40%">](https://www.youtube.com/watch?v=E_I9MvQs9BE "Athena vídeo Demonstração")
-##### *Figura 02. Demonstração Athena*
 
 Link do repositório do projeto: https://github.com/silvercod3/Athena
 
@@ -174,6 +170,7 @@ plt.title('METAS DE ESTUDO') #título do gráfico como "METAS DE ESTUDO".
 plt.show() #exibe o gráfico
 ```
 
+A imagem abaixo mostra a disposição de informações e resultado do gráfico.
 <img src="https://user-images.githubusercontent.com/74321890/234713583-e0115e73-e159-4742-b333-a15939ba2bf2.png">
 
 </details>
@@ -478,15 +475,12 @@ Além disso, foi quando coloquei em prática as aulas de banco de dados e utiliz
 ## Parceiro Acadêmico
 MidAll <br/>
 ![midall](https://user-images.githubusercontent.com/74321890/191144569-593506c4-b02e-41bf-830d-9f6e88a57278.jpeg)
-##### *Figura 05. MidAll*
-
 
 ### Visão do Projeto
 <p align="justify">
 Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. Atualmente implementamos e apresentaremos o cadastro dos produtos em várias promoções no servidor/ banco de dados, utilizando operadores lógicos para criar diferentes mecânicas de promoções, o desconto é aplicado na sacola de compra e possui uma visualização dedicada para conferência e escolha de possíveis promoções. Além disso, há a autonomia fornecida ao usuário para editar, remover, arquivar ou desarquivar seus produtos e para editar, deletar, interromper ou ativar promoções e da visualização prática e intuitiva dos produtos e promoções cadastradas através da listagem que possui um filtro para que seja possível diferenciar quais os status de produtos e promoções.
 
 [<img src="https://github.com/DolphinDatabase/DescontOn/blob/main/Imagens/DescontOn-Youtube.png" width="40%">](https://www.youtube.com/watch?v=n5GK4uJpNkk&list=PLUOBqJKbljZsrdWoo8YF8GLvADBIIRMPV "DescontOn vídeo Demonstração")
-##### *Figura 06. Demontração DescontOn*
 
 Link do repositório do projeto: https://github.com/DolphinDatabase/DescontOn
 
@@ -572,6 +566,54 @@ Utilizamos JavaScript e requisições HTTP, para desenvolver as seguintes funcio
 
 ### Contribuições pessoais
 <p align="justify">
+No código, além de trabalhar com o front-end, fiquei responsável pela criação de DTOs (Data Transfer Object), um padrão de projetos bastante usado em Java para o transporte de dados entre diferentes componentes de um sistema, diferentes instâncias ou processos de um sistema distribuído ou diferentes sistemas via serialização.
+	
+<details><summary>DTO</summary>
+<p align="justify">
+	
+>A ideia consiste basicamente em agrupar um conjunto de atributos numa classe simples de forma a otimizar a comunicação. Além disso, muitas vezes os dados usados na comunicação não refletem exatamente os atributos do seu modelo. Então, um DTO seria uma classe que provê exatamente aquilo que é necessário para um determinado 
+processo.
+  
+Abaixo está um exemplo de ProdutoDTO:
+
+>O código apresenta a classe "ProdutoDTO", que é uma classe de transferência de dados (DTO) usada para representar informações sobre um produto em um sistema. Ela possui cinco campos: "id" (identificador do produto), "nome" (nome do produto), "valor" (valor do produto), "categoria" (categoria do produto) e "status" (status do produto). A classe é anotada com "@Data" para gerar automaticamente métodos básicos, como getters e setters, e "@AllArgsConstructor" para gerar um construtor que aceita todos os parâmetros. Essa classe facilita o transporte e manipulação dos dados do produto em diferentes partes do sistema.
+  
+  ```
+  @Data
+  @AllArgsConstructor
+  public class ProdutoDTO {
+    private Long id;
+    private String nome;
+    private Double valor;
+    private String categoria;
+    private Integer status;
+  }
+  ```
+  
+Abaixo apresento um exemplo da chamada do DTO dentro de ProdutoController:
+	
+>Esse trecho de código representa um método que trata uma requisição POST para criar um novo produto. Ele recebe um objeto "Produto" como parâmetro, salva esse objeto no repositório de produtos,"ProdutoDTO" é preenchido com os dados salvos e retorna esse objeto como resposta da requisição. O uso de um DTO permite encapsular e transportar as informações relevantes do produto para a camada de apresentação ou comunicação com outros sistemas, evitando expor diretamente a entidade de domínio "Produto".
+	
+ ```
+  @PostMapping
+  public ProdutoDTO create(@RequestBody Produto produto){
+    Produto save = produtoRepositorio.save(produto);
+    ProdutoDTO res = new ProdutoDTO(save.getId(),save.getNome(),save.getValor(),save.getCategoria(),save.getStatus());
+    return res;
+  }
+ ```
+  
+</details>
+
+Na parte de usabilidade, fiquei responsável pelos Wireframes no Figma e fiz cada tela prezando pela experiência do usuário (UX - user experience). Utilizamos template 
+do Bootstrap e trabalhamos com HTML/ CSS e JavaScript para o desenvolvimento da aplicação web.
+<details><summary>Página inicial</summary>
+A imagem abaixo mostra a página inicial da aplicação, a usabilidade das cores (o que transmite para o usuário) e a forma como a barra de navegação é organizada.
+<img src="https://user-images.githubusercontent.com/74321890/203669780-f534d9e9-698e-4341-8459-e819e880ea0a.png">
+
+O trecho de código abaixo 
+</details>
+	
 Trabalhei com o papel de Scrum Master, gerenciando e ajudando com impedimentos do time. Como ferramenta de apoio utilizamos o Jira para ter mais visualização e controle sobre as tarefas e suas divisões para cada membro da equipe.
 <details><summary>Jira - DescontOn</summary>
 Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está o roadmap do projeto. 
@@ -586,49 +628,7 @@ Abaixo está o ínicio da documentação feita no Github, para mais detalhes ace
 
 <img src="https://user-images.githubusercontent.com/74321890/203660418-1ba84ed7-a534-48b1-9335-eb8598f4ce4e.png">
 </details>
-
-Na parte de usabilidade, fiquei responsável pelos Wireframes no Figma e fiz cada tela prezando pela experiência do usuário (UX - user experience). Utilizamos template 
-do Bootstrap e trabalhamos com HTML/ CSS e JavaScript para o desenvolvimento da aplicação web.
-<details><summary>Página inicial</summary>
-A imagem abaixo mostra a página inicial da aplicação, a usabilidade das cores (o que transmite para o usuário) e a forma como a barra de navegação é organizada.
-<img src="https://user-images.githubusercontent.com/74321890/203669780-f534d9e9-698e-4341-8459-e819e880ea0a.png">
-</details>
-
-No código, além de trabalhar com o front-end, fiquei responsável pela criação de DTOs (Data Transfer Object), um padrão de projetos bastante usado em Java para o transporte de dados entre 
-diferentes componentes de um sistema, diferentes instâncias ou processos de um sistema distribuído ou diferentes sistemas via serialização.
-<details><summary>DTO</summary>
-  
->A ideia consiste basicamente em agrupar um conjunto de atributos numa classe simples de forma a otimizar a comunicação. Além disso, muitas vezes os dados usados na 
-comunicação não refletem exatamente os atributos do seu modelo. Então, um DTO seria uma classe que provê exatamente aquilo que é necessário para um determinado 
-processo.
-  
-Abaixo está um exemplo de ProdutoDTO:
-  
-  ```
-  @Data
-  @AllArgsConstructor
-  public class ProdutoDTO {
-    private Long id;
-    private String nome;
-    private Double valor;
-    private String categoria;
-    private Integer status;
-  }
-  ```
-  
-E a um exemplo da chamada do DTO dentro de ProdutoController:
-  
- ```
-  @PostMapping
-  public ProdutoDTO create(@RequestBody Produto produto){
-    Produto save = produtoRepositorio.save(produto);
-    ProdutoDTO res = new ProdutoDTO(save.getId(),save.getNome(),save.getValor(),save.getCategoria(),save.getStatus());
-    return res;
-  }
- ```
-  
-</details>
-  
+	
 ### Aprendizados Efetivos
 <p align="justify">
   
