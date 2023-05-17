@@ -619,7 +619,7 @@ Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está
 
 Fiquei responsável também pela parte de documentar o projeto, sendo no Github algumas descrições mais específicas e menos teóricas, já no documento em .pdf falo melhor sobre a teoria das cores, descrição sobre linguagens e frameworks usados e explico trechos de código.
 <details><summary>Documentação</summary>
-Abaixo está o ínicio da documentação feita no Github, para mais detalhes acesse o nosso github: https://github.com/DolphinDatabase/DescontOn.
+Abaixo está o ínicio da documentação feita no Github, para mais detalhes acesse o nosso github.
 
 <img src="https://user-images.githubusercontent.com/74321890/203660418-1ba84ed7-a534-48b1-9335-eb8598f4ce4e.png">
 </details>
@@ -647,23 +647,18 @@ Subiter
 
 <img src="https://user-images.githubusercontent.com/74321890/200832569-795e2fa6-0fc6-4b1e-8547-d7b2abf82c0b.jpg" height="300"/>
 
-##### *Figura 06. Subiter*
 <p align="justify">
-A Subiter é uma empresa de base tecnológica especializada em visão infravermelha. Sua missão é ajudar a indústria a alcançar excelência em seus processos produtivos. 
-
-Por meio de sistemas inteligentes de inspeção e monitoramento, podemos observar fenômenos que estão além da capacidade dos olhos humanos.
+A Subiter é uma empresa de base tecnológica especializada em visão infravermelha. Sua missão é ajudar a indústria a alcançar excelência em seus processos produtivos. Por meio de sistemas inteligentes de inspeção e monitoramento, podemos observar fenômenos que estão além da capacidade dos olhos humanos.
 
 ### Visão do Projeto
 <p align="justify">
 Sistema ERP que visa gerenciar e controlar dados, afim de reduzir custos, facilitar tomadas de decisão, otimizar o tempo de atendimento de chamados e aprimorar o 
-solucionamento destes. É composta por níveis de usuários, onde o administrador terá controle sobre todas as funcionalidades existentes, dentre elas o cadastro, edição 
-e exclusão de outros usuários; o suporte ficará responsável pelo CRUD de falhas e soluções genéricas e CRUD de equipamentos; o cliente trará o problema para o suporte e, este ficará responsável por gerenciar o chamado e resolvê-los.
+solucionamento destes. É composta por níveis de usuários, onde o administrador terá controle sobre todas as funcionalidades existentes, dentre elas o cadastro, edição e exclusão de outros usuários; o suporte ficará responsável pelo CRUD de falhas e soluções genéricas e CRUD de equipamentos; o cliente trará o problema para o suporte e, este ficará responsável por gerenciar o chamado e resolvê-los.
 
 A MCS (Management and Control System) trouxe de uma forma fácil e rápida o mais importante: o mapeamento gráfico de anomalias nas silhuetas.
   
 <p align="justify">
-O Mapemamento de anomalias consiste em durante ou após uma inspeção, o suporte conseguirá fazer o upload da silhueta e adicionar as falhas (específicas do chamado) encontradas em formas e tamanhos diferentes para uma melhor identificação da posição e tamanho, facilitando na identificação de quantidade e quais materiais serão 
-utilizados para a solução dessas falhas e também no cálculo do orçamento.
+O Mapemamento de anomalias consiste em durante ou após uma inspeção, o suporte conseguirá fazer o upload da silhueta e adicionar as falhas (específicas do chamado) encontradas em formas e tamanhos diferentes para uma melhor identificação da posição e tamanho, facilitando na identificação de quantidade e quais materiais serão utilizados para a solução dessas falhas e também no cálculo do orçamento.
 
 Sua interface web facilita a gestão de dados e dá autonomia aos usuários dessa aplicação para que possam atuar com desenvoltura dentro das permissões concedidas. 
 
@@ -674,16 +669,191 @@ Link do repositório do projeto: https://github.com/DolphinDatabase/MCS
 ## Tecnologias utilizadas:
 <p align="justify">
 Assim como no projeto anterior, a aplicação teve desenvolvimento web, a única diferença foi utilização o framework VueJS para a construção do front-end da aplicação.
+<details><summary>VueJS</summary>
+<p align="justify">
+	
+>Vue.js é um framework JavaScript de código aberto utilizado para construir interfaces de usuário interativas e dinâmicas. Ele é baseado em componentes reutilizáveis e adota uma abordagem de programação reativa, permitindo a criação de aplicativos web de uma única página (SPA) de forma eficiente. O Vue.js combina recursos modernos do JavaScript com uma sintaxe simples e intuitiva, facilitando o desenvolvimento de aplicativos web complexos. Ele é amplamente utilizado na comunidade de desenvolvimento web devido à sua flexibilidade, desempenho e curva de aprendizado suave.
+</details>
+
+<details><summary>Konva</summary>
+<p align="justify">
+	
+>Konva.js é uma biblioteca JavaScript de código aberto que facilita a criação de gráficos interativos e de alto desempenho em aplicativos da web. Ela é especialmente projetada para trabalhar com elementos gráficos bidimensionais, como desenhos, animações e manipulação de objetos em um ambiente de tela HTML5. Konva.js fornece uma API simples e poderosa que permite criar e gerenciar facilmente elementos gráficos, aplicar transformações, adicionar interatividade, detectar eventos, fazer desenhos vetoriais e muito mais. Com a ajuda do Konva.js, os desenvolvedores podem criar aplicativos visualmente ricos, como editores de imagem, jogos, mapas interativos e ferramentas de desenho.
+</details>
+	
 Para a programação das rotas HTTP, os serviços e API do back-end foram feitas em Java.
-  
+	
 Um diferencial do banco de dados, como requisito da FATEC, foi a utilização do OracleCloud.
+<details><summary>OracleBD</summary>
+
+ > É o SGBD da Oracle, o mais utilizado em aplicações corporativas, lançado em meados dos anos 70, é multiplataforma e possui licença comercial.<br/>Foi usado para estruturar o modelo de dados relacional da aplicação, além disso foram criadas procedures e triggers no SGBD.
+
+</details>
 
 #### Contribuições pessoais
 <p align="justify">
-Atuando no papel de Scrum Master, fiquei responsável pelo gerenciamento de impedimentos e organização de tarefas, criação de wireframes e documentação do projeto.
 
-Neste projeto minha principal responsabilidade no código foi o desenvolvimento das telas no front-end, utilizando a biblioteca Element+ para ícones, tabelas, entre outros e konva para o desenho do mapeamento de anomalias e desenvolvi no back-end algumas rotas HTTP. 
+Neste projeto minha principal responsabilidade no código foi o desenvolvimento das telas no front-end, utilizando a biblioteca Element+ para ícones, tabelas, entre outros e konva para o desenho do mapeamento de anomalias.. 
 
+Trabalhando com o VueJS, a separação de código acontece por meio de views, components, entre outros.
+
+<details><summary>Home View</summary>
+<p align="justify">
+
+>Nesse trecho de código, mostro como é estruturado a HomeView.vue. Esse template define a estrutura de uma página de login com elementos e conteúdos específicos, usando a sintaxe do Vue.js para criar componentes reutilizáveis e interativos.
+
+```
+<template>
+  <div id="page">
+    <div id="loginBackgorund">
+      <div>
+        <img src="../assets/Logo.svg">
+        <p style="margin-top: auto;">da Subiter.</p>
+      </div>
+      <div>
+        <p>Bem-vindo</p>
+        <p>De volta!</p>
+      </div>
+      <div>
+        <p>Alcance o invisível, Subiter</p>
+      </div>
+    </div>
+    <div id="loginMain">
+      <div id="loginContent">
+        <section id="welcome">
+          <h1>Login</h1>
+          <div>
+            <img src="../assets/Icons/Info.svg" style="width: 12px; margin:1px 7px;"/>
+            <span>
+              <p>Olá, amigo! Por favor entre no</p>
+              <p>Sistema de Gerenciamento de Controle.</p>
+            </span>
+          </div>
+        </section>
+        <LoginForm/>
+      </div>
+    </div>
+  </div>
+</template>
+```
+
+>Esse código também contém a importação de um componente "LoginForm" que conta com a identificação de email, senha e tipo de usuário, onde conseguimos identificar na seção de script:
+
+```
+<script> 
+import LoginForm from '../components/form/LoginForm.vue'
+export default {
+  name:"Login",
+  components:{
+    LoginForm
+  }
+}
+</script>
+```
+
+>Para lidar com o design e estilização com CSS, o Vue contém também uma seção onde é possível utilizar com class e ids:
+```
+<style scoped>
+
+#loginBackgorund {
+  background-image: url("../assets/BgLogin.svg");
+  width: 50%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.loginBackground div:first-child{
+  display: flex;
+}
+</style>
+```
+
+>O uso do modificador scoped garante que essas regras de estilo sejam aplicadas somente aos elementos dentro do escopo do componente atual, evitando que sejam afetados por estilos definidos em outros componentes ou estilos globais da aplicação.
+</details>
+
+<details><summary>Desenho de anomalias</summary>
+<p align="justify">
+	
+ > A cada vez que o usuário clicava dentro da tag canvas uma função era disparada para adicionar as coordenadas do formato desenhado para uma array local e em seguida ser armazenada no banco de dados:
+ ```
+ draw(evt){
+  const stage = evt.target.getStage();
+  const pos = stage.getPointerPosition();
+  const nl = {
+    x:pos.x,
+    y:pos.y,
+    height: this.tamanho,
+    width: (this.forma=="alongado")?(this.tamanho*3):this.tamanho,
+    fill:this.color,
+    type:this.forma,
+    info:{
+        w:null,
+        h:null,
+        d:null
+    }
+  }
+  if(this.forma=="isolado"){
+      nl['radius']=this.tamanho/2
+  }
+  this.layers[this.forma].push(nl)
+}
+ ```
+ > A função "draw" recebe um evento (evt) como parâmetro. Dentro da função, é obtida a referência ao stage a partir do evento. Em seguida, é obtida a posição do ponteiro (pos) no stage. Com base nessa posição, são definidas as propriedades de um novo objeto (nl) que será desenhado. As propriedades incluem as coordenadas x e y, altura e largura, cor de preenchimento, tipo de forma e informações adicionais. Se a forma for "isolado", é definido também o raio com base no tamanho. O novo objeto é então adicionado a uma camada específica (this.layers[this.forma]) para armazenamento.
+</details>
+
+No backend, participei no desenvolvimento das rotas HTTP na linguagem Java.
+<details><summary>Orçamento</summary>
+<p align="justify">
+
+>Esse método se trata de uma solicitação GET para listar orçamentos. Ele verifica a permissão do usuário, recupera os resumos de orçamento e retorna uma resposta com o resultado da operação, incluindo mensagens informativas em caso de sucesso ou mensagens de erro em caso de exceção.
+```
+    @GetMapping
+    @PreAuthorize("hasRole('ADM')")
+    public ResponseEntity<ResponseSummaryModel> listBudget(){
+        ResponseSummaryModel res = new ResponseSummaryModel();
+        try{
+            List<BudgetSummaryModel> all = bRepository.findAll().stream().map(this::toBudgetSummaryModel).collect(Collectors.toList());
+            res.setAll(200, true, "Todos os Orçamentos listados", all);
+            logger.info(res.getMessage());
+            return ResponseEntity.status(HttpStatus.OK).body(res);
+        }catch(Exception err){
+            res.setAll(500, false, err.getMessage(), null);
+            logger.error(res.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(res);
+        }
+    }	
+```
+
+</details>
+Atuando no papel de Scrum Master, fiquei responsável pelo gerenciamento de impedimentos e organização de tarefas.
+<details><summary>Jira - MCS</summary>
+Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está o roadmap do projeto. 
+
+<img src="https://github.com/pdrMottaS/Portifolio/assets/74321890/bd665fe3-0d36-41cf-8b72-760a2207bd60">
+</details>
+
+Na parte de design também ajudei na criação de wireframes.
+<details><summary>Wireframes</summary>
+	
+Para acessar nossos *Wireframes*, clique [aqui](https://www.figma.com/file/MM0pLqbdpFde9cqt9upsWx/MCS-Dolphin?node-id=0%3A1).
+	
+<img src="https://github.com/pdrMottaS/Portifolio/assets/74321890/12f0fd7e-760f-4b28-bac5-a8e88a573b2f">
+</details>	
+	
+Também fiz a documentação do projeto tanto no GitHub, manual do usuário e organização de código.
+<details><summary>Documentação</summary>
+
+</details>
+	
 Minhas áreas de atuação:
 - Home: front-end
 - CRUD de Usuários: front-end
