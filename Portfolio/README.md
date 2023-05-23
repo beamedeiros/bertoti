@@ -690,7 +690,7 @@ Para acessar a documentação sobre omo conectar Autonomous Database da Oracle C
 
 </details>
 
-#### Contribuições pessoais
+### Contribuições pessoais
 <p align="justify">
 
 Neste projeto minha principal responsabilidade no código foi o desenvolvimento das telas no front-end, utilizando a biblioteca Element+ para ícones, tabelas, entre outros e konva para o desenho do mapeamento de anomalias. 
@@ -877,18 +877,19 @@ Minhas áreas de atuação:
 - Mapeamento gráfico: front-end
 
 ## Aprendizados Efetivos
+Durante o projeto participei de um Hackathon organizado pela empresa Soluções Sophia, junto com os outros integrantes do grupo Dolphin Database.
+Nesse evento, unimos tecnologia e educação onde nosso objetivo foi aperfeiçoar as ideias e implementá-las em um aplicativo feito para professores, pais e alunos. Desenvolvi um protótipo no figma e a aplicação front-end utilizando o VueJS.
+
+Como aluna destaque, fui contratada como estagiária na Soluções Sophia, onde trabalho atualmente com o desenvolvimento de front-end e design.
+
 - Desenvolvimento de serviços CRUD: sei fazer com autonomia.
 - Desenvolvimento utilizando VueJS: sei fazer com autonomia.
 - Utilização de OracleCloud: sei fazer com autonomia.
 
-
 # Projeto 5 - 2º semestre de 2021
 ## Empresa parceira:
-GSW
-
-<img src="https://user-images.githubusercontent.com/54003876/142731143-f3afb070-80b4-442d-ba68-ddd77247dc5b.png" height="150"/>
-
-##### *Figura 09. GSW (Fonte: https://www.gsw.com.br/)*
+MidAll<br/>
+![midall](https://user-images.githubusercontent.com/74321890/191144569-593506c4-b02e-41bf-830d-9f6e88a57278.jpeg)
 
 A GSW é uma empresa brasileira. No mercado desde 1991, sua atuação é focada em produzir soluções para gerenciamento e controle de processos e negócios. 
 
