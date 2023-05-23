@@ -689,13 +689,14 @@ Um diferencial do banco de dados, como requisito da FATEC, foi a utilização do
  > É o SGBD da Oracle, o mais utilizado em aplicações corporativas, lançado em meados dos anos 70, é multiplataforma e possui licença comercial.
 
 Foi usado para estruturar o modelo de dados relacional da aplicação, além disso foram criadas procedures e triggers no SGBD.
+Para acessar a documentação sobre omo conectar Autonomous Database da Oracle Cloud com Spring Boot JDBC do clique [aqui.](https://github.com/DolphinDatabase/MCS/blob/main/Documenta%C3%A7%C3%A3o/Como%20conectar%20Autonomous%20Database%20da%20Oracle%20Cloud%20com%20Spring%20Boot%20JDBC.pdf)
 
 </details>
 
 #### Contribuições pessoais
 <p align="justify">
 
-Neste projeto minha principal responsabilidade no código foi o desenvolvimento das telas no front-end, utilizando a biblioteca Element+ para ícones, tabelas, entre outros e konva para o desenho do mapeamento de anomalias.. 
+Neste projeto minha principal responsabilidade no código foi o desenvolvimento das telas no front-end, utilizando a biblioteca Element+ para ícones, tabelas, entre outros e konva para o desenho do mapeamento de anomalias. 
 
 Trabalhando com o VueJS, a separação de código acontece por meio de views, components, entre outros.
 
@@ -853,7 +854,7 @@ Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está
 Na parte de design também ajudei na criação de wireframes.
 <details><summary>Wireframes</summary>
 	
-Para acessar nossos *Wireframes*, clique [aqui](https://www.figma.com/file/MM0pLqbdpFde9cqt9upsWx/MCS-Dolphin?node-id=0%3A1).
+Para acessar nossos *Wireframes*, clique [aqui.](https://www.figma.com/file/MM0pLqbdpFde9cqt9upsWx/MCS-Dolphin?node-id=0%3A1).
 
 <img src="https://github.com/DolphinDatabase/Cloud-In/assets/74321890/a2e5f9ff-2b5e-4270-b66e-678b0ecf13e4">
 
