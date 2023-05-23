@@ -878,9 +878,9 @@ Minhas áreas de atuação:
 
 ## Aprendizados Efetivos
 Durante o projeto participei de um Hackathon organizado pela empresa Soluções Sophia, junto com os outros integrantes do grupo Dolphin Database.
-Nesse evento, unimos tecnologia e educação onde nosso objetivo foi aperfeiçoar as ideias e implementá-las em um aplicativo feito para professores, pais e alunos. Desenvolvi um protótipo no figma e a aplicação front-end utilizando o VueJS.
+Nesse evento, unimos tecnologia e educação onde nosso objetivo foi aperfeiçoar as ideias e implementá-las em um aplicativo feito para professores, pais e alunos. Meu grupo ficou responsável pelo tópico de frequência de alunos, então desenvolvi um protótipo no figma e a aplicação front-end utilizando o VueJS.
 
-Como aluna destaque, fui contratada como estagiária na Soluções Sophia, onde trabalho atualmente com o desenvolvimento de front-end e design.
+Como aluna destaque, fui contratada como estagiária na Soluções Sophia, onde trabalho atualmente com o desenvolvimento web e design.
 
 - Desenvolvimento de serviços CRUD: sei fazer com autonomia.
 - Desenvolvimento utilizando VueJS: sei fazer com autonomia.
