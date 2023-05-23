@@ -686,7 +686,9 @@ Para a programação das rotas HTTP, os serviços e API do back-end foram feitas
 Um diferencial do banco de dados, como requisito da FATEC, foi a utilização do OracleCloud.
 <details><summary>OracleBD</summary>
 
- > É o SGBD da Oracle, o mais utilizado em aplicações corporativas, lançado em meados dos anos 70, é multiplataforma e possui licença comercial.<br/>Foi usado para estruturar o modelo de dados relacional da aplicação, além disso foram criadas procedures e triggers no SGBD.
+ > É o SGBD da Oracle, o mais utilizado em aplicações corporativas, lançado em meados dos anos 70, é multiplataforma e possui licença comercial.
+
+Foi usado para estruturar o modelo de dados relacional da aplicação, além disso foram criadas procedures e triggers no SGBD.
 
 </details>
 
@@ -700,6 +702,8 @@ Trabalhando com o VueJS, a separação de código acontece por meio de views, co
 <details><summary>Home View</summary>
 <p align="justify">
 
+<img src="https://github.com/pdrMottaS/Portifolio/assets/74321890/12f0fd7e-760f-4b28-bac5-a8e88a573b2f">
+	
 >Nesse trecho de código, mostro como é estruturado a HomeView.vue. Esse template define a estrutura de uma página de login com elementos e conteúdos específicos, usando a sintaxe do Vue.js para criar componentes reutilizáveis e interativos.
 
 ```
@@ -808,13 +812,18 @@ export default {
 }
  ```
  > A função "draw" recebe um evento (evt) como parâmetro. Dentro da função, é obtida a referência ao stage a partir do evento. Em seguida, é obtida a posição do ponteiro (pos) no stage. Com base nessa posição, são definidas as propriedades de um novo objeto (nl) que será desenhado. As propriedades incluem as coordenadas x e y, altura e largura, cor de preenchimento, tipo de forma e informações adicionais. Se a forma for "isolado", é definido também o raio com base no tamanho. O novo objeto é então adicionado a uma camada específica (this.layers[this.forma]) para armazenamento.
+
+<img src="https://github.com/DolphinDatabase/MCS/assets/74321890/53243fd2-ffcd-4a47-b175-77c65ae08ff5">
+	
 </details>
 
 No backend, participei no desenvolvimento das rotas HTTP na linguagem Java.
 <details><summary>Orçamento</summary>
 <p align="justify">
 
->Esse método se trata de uma solicitação GET para listar orçamentos. Ele verifica a permissão do usuário, recupera os resumos de orçamento e retorna uma resposta com o resultado da operação, incluindo mensagens informativas em caso de sucesso ou mensagens de erro em caso de exceção.
+<img src="https://github.com/DolphinDatabase/Cloud-In/assets/74321890/37241191-d331-4ae5-81df-281e1e79af07">
+	
+>Realizei o CRUD de orçamento, porém abaixo mostro o método de uma solicitação GET para listar orçamentos. Ele verifica a permissão do usuário, recupera os resumos de orçamento e retorna uma resposta com o resultado da operação, incluindo mensagens informativas em caso de sucesso ou mensagens de erro em caso de exceção.
 ```
     @GetMapping
     @PreAuthorize("hasRole('ADM')")
@@ -845,12 +854,17 @@ Na parte de design também ajudei na criação de wireframes.
 <details><summary>Wireframes</summary>
 	
 Para acessar nossos *Wireframes*, clique [aqui](https://www.figma.com/file/MM0pLqbdpFde9cqt9upsWx/MCS-Dolphin?node-id=0%3A1).
-	
-<img src="https://github.com/pdrMottaS/Portifolio/assets/74321890/12f0fd7e-760f-4b28-bac5-a8e88a573b2f">
+
+<img src="https://github.com/DolphinDatabase/Cloud-In/assets/74321890/a2e5f9ff-2b5e-4270-b66e-678b0ecf13e4">
+
 </details>	
 	
 Também fiz a documentação do projeto tanto no GitHub, manual do usuário e organização de código.
 <details><summary>Documentação</summary>
+
+Para acessar nosso *manual do usuário*, clique [aqui](https://github.com/DolphinDatabase/MCS/blob/main/Manual/MCS_ManualdoUsu%C3%A1rio.pdf)
+	
+<img src="https://github.com/DolphinDatabase/Cloud-In/assets/74321890/978b4f38-bb0a-466d-bef1-500825c504de">
 
 </details>
 	
