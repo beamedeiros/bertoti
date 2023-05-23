@@ -30,8 +30,7 @@ Atualmente trabalho com desenvolvimento web utilizando o framework VueJS.
 
 #### Projetos Integradores durante a graduação
 <p align="justify">
-Durante a minha gradução, trabalhei no desenvolvimento de trabalhos chamados de "Projetos integradores". Um projeto integrador tem o objetivo de solucionar um problema
-do mundo real, utilizando os conhecimentos adquiridos durante a graduação.<br/>
+Durante a minha gradução, trabalhei no desenvolvimento de trabalhos chamados de "Projetos integradores". Um projeto integrador tem o objetivo de solucionar um problemado mundo real, utilizando os conhecimentos adquiridos durante a graduação.<br/>
 
 Abaixo todos estes projetos serão descritos, detalhando o problema, solução proposta (e entregue), e os aprendizados extraídos de cada um deles.
 
@@ -96,8 +95,6 @@ Utilizamos o Tkinter para montar a interface do usuário, mais especificamente m
 </details>
   
 ### Contribuições pessoais
-
-Fui responsável por pesquisas sobre Python, como é sua estrutura, bibliotecas para uso e lógica de programação. 
 
 No reconhecimento de voz, implementei a biblioteca SpeechRecognition, para o reconhecimento de voz do usuário/ estudante.
 <details><summary>Código</summary>
@@ -547,7 +544,7 @@ Utilizamos JavaScript e requisições HTTP, para desenvolver as seguintes funcio
 
 ### Contribuições pessoais
 <p align="justify">
-No código, além de trabalhar com o front-end, fiquei responsável pela criação de DTOs (Data Transfer Object), um padrão de projetos bastante usado em Java para o transporte de dados entre diferentes componentes de um sistema, diferentes instâncias ou processos de um sistema distribuído ou diferentes sistemas via serialização.
+No código, além de trabalhar com o front-end, trabalhei na criação de DTOs (Data Transfer Object), um padrão de projetos bastante usado em Java para o transporte de dados entre diferentes componentes de um sistema, diferentes instâncias ou processos de um sistema distribuído ou diferentes sistemas via serialização.
 	
 <details><summary>DTO</summary>
 <p align="justify">
@@ -586,7 +583,7 @@ Abaixo apresento um exemplo da chamada do DTO dentro de ProdutoController:
   
 </details>
 
-Na parte de usabilidade, fiquei responsável pelos Wireframes no Figma e fiz cada tela prezando pela experiência do usuário (UX - user experience). Utilizamos template 
+Na parte de usabilidade, desenvolvi os Wireframes no Figma e fiz cada tela prezando pela experiência do usuário (UX - user experience). Utilizamos template 
 do Bootstrap e trabalhamos com HTML/ CSS e JavaScript para o desenvolvimento da aplicação web.
 <details><summary>Página inicial</summary>
 A imagem abaixo mostra a página inicial da aplicação, a usabilidade das cores (o que transmite para o usuário) e a forma como a barra de navegação é organizada.
@@ -610,14 +607,14 @@ O trecho de código a seguir mostra como montamos o componente de boas-vindas à
 ```
 </details>
 	
-Trabalhei com o papel de Scrum Master, gerenciando e ajudando com impedimentos do time. Como ferramenta de apoio utilizamos o Jira para ter mais visualização e controle sobre as tarefas e suas divisões para cada membro da equipe.
+Atuei como Scrum Master, gerenciando e ajudando com impedimentos do time. Como ferramenta de apoio utilizamos o Jira para ter mais visualização e controle sobre as tarefas e suas divisões para cada membro da equipe.
 <details><summary>Jira - DescontOn</summary>
 Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está o roadmap do projeto. 
 
 <img src="https://user-images.githubusercontent.com/74321890/203658630-474dbc4f-a670-470a-836e-d75cd28cf59a.jpeg">
 </details>
 
-Fiquei responsável também pela parte de documentar o projeto, sendo no Github algumas descrições mais específicas e menos teóricas, já no documento em .pdf falo melhor sobre a teoria das cores, descrição sobre linguagens e frameworks usados e explico trechos de código.
+Documentei o projeto, sendo no Github algumas descrições mais específicas e menos teóricas, já no documento em .pdf falo melhor sobre a teoria das cores, descrição sobre linguagens e frameworks usados e explico trechos de código.
 <details><summary>Documentação</summary>
 Abaixo está o ínicio da documentação feita no Github, para mais detalhes acesse o nosso github.
 
@@ -700,7 +697,8 @@ Neste projeto minha principal responsabilidade no código foi o desenvolvimento 
 
 Trabalhando com o VueJS, a separação de código acontece por meio de views, components, entre outros.
 
-<details><summary>Home View</summary>
+Abaixo mostro alguns exemplos do desenvolvimento do **front-end** em VueJS.
+<details><summary>Tela - Home</summary>
 <p align="justify">
 
 <img src="https://github.com/pdrMottaS/Portifolio/assets/74321890/12f0fd7e-760f-4b28-bac5-a8e88a573b2f">
@@ -785,7 +783,7 @@ export default {
 >O uso do modificador scoped garante que essas regras de estilo sejam aplicadas somente aos elementos dentro do escopo do componente atual, evitando que sejam afetados por estilos definidos em outros componentes ou estilos globais da aplicação.
 </details>
 
-<details><summary>Desenho de anomalias</summary>
+<details><summary>Tela - Desenho de Anomalias</summary>
 <p align="justify">
 	
  > A cada vez que o usuário clicava dentro da tag canvas uma função era disparada para adicionar as coordenadas do formato desenhado para uma array local e em seguida ser armazenada no banco de dados:
@@ -818,8 +816,8 @@ export default {
 	
 </details>
 
-No backend, participei no desenvolvimento das rotas HTTP na linguagem Java.
-<details><summary>Orçamento</summary>
+No **back-end**, participei do desenvolvimento das rotas HTTP na linguagem Java.
+<details><summary>Rota de Orçamento</summary>
 <p align="justify">
 
 <img src="https://github.com/DolphinDatabase/Cloud-In/assets/74321890/37241191-d331-4ae5-81df-281e1e79af07">
@@ -844,14 +842,8 @@ No backend, participei no desenvolvimento das rotas HTTP na linguagem Java.
 ```
 
 </details>
-Atuando no papel de Scrum Master, fiquei responsável pelo gerenciamento de impedimentos e organização de tarefas.
-<details><summary>Jira - MCS</summary>
-Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está o roadmap do projeto. 
 
-<img src="https://github.com/pdrMottaS/Portifolio/assets/74321890/bd665fe3-0d36-41cf-8b72-760a2207bd60">
-</details>
-
-Na parte de design também ajudei na criação de wireframes.
+Na parte de design, ajudei na criação de wireframes.
 <details><summary>Wireframes</summary>
 	
 Para acessar nossos *Wireframes*, clique [aqui.](https://www.figma.com/file/MM0pLqbdpFde9cqt9upsWx/MCS-Dolphin?node-id=0%3A1).
@@ -859,8 +851,15 @@ Para acessar nossos *Wireframes*, clique [aqui.](https://www.figma.com/file/MM0p
 <img src="https://github.com/DolphinDatabase/Cloud-In/assets/74321890/a2e5f9ff-2b5e-4270-b66e-678b0ecf13e4">
 
 </details>	
+
+Atuando no papel de Scrum Master, fiquei responsável pelo gerenciamento de impedimentos e organização de tarefas.
+<details><summary>Jira - MCS</summary>
+Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está o roadmap do projeto. 
+
+<img src="https://github.com/pdrMottaS/Portifolio/assets/74321890/bd665fe3-0d36-41cf-8b72-760a2207bd60">
+</details>
 	
-Também fiz a documentação do projeto tanto no GitHub, manual do usuário e organização de código.
+Documentei o projeto no GitHub, desenvolvi documentos sobre o manual do usuário e como está a organização do código e suas funcionalidades.
 <details><summary>Documentação</summary>
 
 Para acessar nosso *manual do usuário*, clique [aqui](https://github.com/DolphinDatabase/MCS/blob/main/Manual/MCS_ManualdoUsu%C3%A1rio.pdf)
