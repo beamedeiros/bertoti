@@ -43,6 +43,8 @@ Fatec Prof. Jessen Vidal (proposta realizada pelo docente responsável pela disc
 
 ![image](https://user-images.githubusercontent.com/74321890/221617740-afbc3809-af92-43e8-bc11-698eeffb4bf4.png)
 
+A Fatec é uma Faculdade Pública Estadual e todos os cursos oferecidos são gratuitos.
+
 ### Visão do Projeto
 
 Desenvolver uma aplicação em python que conseguisse reconhecer voz e atuar conforme os comandos do usuário.
