@@ -194,7 +194,8 @@ No mais, temos os pontos específicos abaixo de aprendizados efetivos:
 ### Parceiro Acadêmico
 Necto Systems <br/>
 ![image](https://user-images.githubusercontent.com/74321890/200952858-ff867019-d4c6-49cf-9c2a-9508546a5ed9.png)
-##### *Figura 03. Necto Systems*
+
+Desenvolvimento estratégico de software para necessidades específicas
 
 ### Visão do Projeto
 
