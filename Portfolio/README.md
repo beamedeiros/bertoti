@@ -201,7 +201,6 @@ Necto Systems <br/>
 Aplicação de monitoramento voltada somente à SGBDs, focada na performance e desempenho. Através da coleta de dados do SGBD (memória, tempo de consultas, espaço em disco, transações, evolução da memória, caches e registros) que influenciam na saúde e manutenção periódica.
 
 [<img src="https://user-images.githubusercontent.com/74321890/200989611-49f7bac0-fb95-4efd-a935-5c38141a6458.png" width="40%">](https://www.youtube.com/watch?v=zVTsaxL_-l4&list=PLUOBqJKbljZvQtu2OXq071Id11zidSJNS "SGBD Health vídeo Demonstração")
-##### *Figura 04. Demonstração SGBD Health*
 
 Link do repositório do projeto: https://github.com/DolphinDatabase/SGBD_Health
 
@@ -260,65 +259,7 @@ public class Csv {
 	static String filepath2 = "query.csv";
 	static String filepath3 = "indices.csv";
 	static String filepath4 = "transacao.csv";	
-	
-    public Csv() {
-        setShowVerticalLines(false);
-    }
-
-    public void setRightAlign(boolean rightAlign) {
-        this.rightAlign = rightAlign;
-    }
-
-    public void setShowVerticalLines(boolean showVerticalLines) {
-        verticalSep = showVerticalLines ? "|" : "";
-        joinSep = showVerticalLines ? "+" : " ";
-    }
-
-    public void setHeaders(String... headers) {
-        this.headers = headers;
-    }
-
-    public void addRow(String... cells) {
-        rows.add(cells);
-    }
-
-    public void print() {
-        int[] maxWidths = headers != null ?
-                Arrays.stream(headers).mapToInt(String::length).toArray() : null;
-
-        for (String[] cells : rows) {
-            if (maxWidths == null) {
-                maxWidths = new int[cells.length];
-            }
-            if (cells.length != maxWidths.length) {
-                throw new IllegalArgumentException("Number of row-cells and headers should be consistent");
-            }
-            for (int i = 0; i < cells.length; i++) {
-                maxWidths[i] = Math.max(maxWidths[i], cells[i].length());
-            }
-        }
-
-        if (headers != null) {
-            printLine(maxWidths);
-            printRow(headers, maxWidths);
-            printLine(maxWidths);
-        }
-        for (String[] cells : rows) {
-            printRow(cells, maxWidths);
-        }
-        if (headers != null) {
-            printLine(maxWidths);
-        }
-    }
-
-    private void printLine(int[] columnWidths) {
-        for (int i = 0; i < columnWidths.length; i++) {
-            String line = String.join("", Collections.nCopies(columnWidths[i] +
-                    verticalSep.length() + 1, HORIZONTAL_SEP));
-            System.out.print(joinSep + line + (i == columnWidths.length - 1 ? joinSep : ""));
-        }
-        System.out.println();
-    }
+[...]
 
     private void printRow(String[] cells, int[] maxWidths) {
         for (int i = 0; i < cells.length; i++) {
@@ -334,107 +275,28 @@ public class Csv {
     }
 ```
                                          
->O método selecionar que recebe uma consulta SQL, uma conexão com um banco de dados, informações sobre as colunas que devem ser selecionadas, um título para o arquivo CSV a ser salvo, um título para a exibição na console, um caminho para o arquivo CSV, um parâmetro de exibição na console e um parâmetro de salvamento em arquivo.
+>O método selecionar que recebe uma consulta SQL, uma conexão com um banco de dados, informações sobre as colunas que devem ser selecionadas, um título para o arquivo CSV a ser salvo, um título para a exibição no console, um caminho para o arquivo CSV, um parâmetro de exibição na console e um parâmetro de salvamento em arquivo.
   
 ```
-protected static void selecionar(String select, Connection c, int i, int j, String[] quantidadeColuna,
-			String tituloCsv, String[] tituloCosole, String filepath, int print, int salvar)
-			throws SQLException, IOException {
+if (i == 4 && j == 6) {
+	quantidadeColuna[i - 4] = (result.getString(i - 3));
+	quantidadeColuna[i - 3] = (result.getString(i - 2).replaceAll("\\r\\n|\\n", "").substring(0, 25)
+			+ "...");
+	quantidadeColuna[i - 2] = (result.getString(i - 1));
+	quantidadeColuna[i - 1] = (result.getString(i));
+	st.addRow(quantidadeColuna[i - 4], quantidadeColuna[i - 3], quantidadeColuna[i - 2],
+			quantidadeColuna[i - 1]);
 
-		PreparedStatement stmt = c.prepareStatement(select);
-		ResultSet result = stmt.executeQuery();
-		if (salvar == 1) {
-			Csv st = new Csv();
-			st.setHeaders(tituloCosole);
-			st.setShowVerticalLines(true);
-			FileWriter fw = new FileWriter(filepath, true);
-			BufferedWriter bw = new BufferedWriter(fw);
-			PrintWriter pw = new PrintWriter(bw);
-			Reader reader = new FileReader(filepath);
-			int readSize = reader.read();
-			if (readSize == -1) {
-				pw.println(tituloCsv);
-
-			}
-			int k = 0;
-
-			while (result.next()) {
-
-				if (i == 4 && j == 6) {
-					quantidadeColuna[i - 4] = (result.getString(i - 3));
-					quantidadeColuna[i - 3] = (result.getString(i - 2).replaceAll("\\r\\n|\\n", "").substring(0, 25)
-							+ "...");
-					quantidadeColuna[i - 2] = (result.getString(i - 1));
-					quantidadeColuna[i - 1] = (result.getString(i));
-					st.addRow(quantidadeColuna[i - 4], quantidadeColuna[i - 3], quantidadeColuna[i - 2],
-							quantidadeColuna[i - 1]);
-
-				} else if (i == 4 && j == 7) {
-					quantidadeColuna[i - 4] = (result.getString(i - 3));
-					quantidadeColuna[i - 3] = (result.getString(i - 2).replaceAll("\\r\\n|\\n", ""));
-					quantidadeColuna[i - 2] = (result.getString(i - 1));
-					quantidadeColuna[i - 1] = (result.getString(i));
-					st.addRow(quantidadeColuna[i - 4], quantidadeColuna[i - 3], quantidadeColuna[i - 2],
-							quantidadeColuna[i - 1]);
-				} else if (i == 4) {
-					quantidadeColuna[i - 4] = (result.getString(i - 3));
-					quantidadeColuna[i - 3] = (result.getString(i - 2));
-					quantidadeColuna[i - 2] = (result.getString(i - 1));
-					quantidadeColuna[i - 1] = (result.getString(i));
-					st.addRow(quantidadeColuna[i - 4], quantidadeColuna[i - 3], quantidadeColuna[i - 2],
-							quantidadeColuna[i - 1]);
-
-				} else if (i == 3) {
-					quantidadeColuna[i - 3] = (result.getString(i - 2));
-					quantidadeColuna[i - 2] = (result.getString(i - 1));
-					quantidadeColuna[i - 1] = (result.getString(i));
-					st.addRow(quantidadeColuna[i - 3], quantidadeColuna[i - 2], quantidadeColuna[i - 1]);
-
-				} else if (i == 2) {
-					quantidadeColuna[i - 2] = (result.getString(i - 1));
-					quantidadeColuna[i - 1] = (result.getString(i));
-					st.addRow(quantidadeColuna[i - 2], quantidadeColuna[i - 1]);
-				}
-
-				try {
-
-					LocalDateTime ldtNow = LocalDateTime.now();
-					if (i == 4 && j == 6) {
-					}
-					else if (i == 3 && j == 8) {
-					
-					}
-					else if (i == 4 && j == 9) {
-						
-					}
-					else if (i == 4) {
-						pw.println(quantidadeColuna[i - 4] + ";" + quantidadeColuna[i - 3] + ";"
-								+ quantidadeColuna[i - 2] + ";" + quantidadeColuna[i - 1] + ";" + ldtNow);
-					
-					} else if (i == 4 && j == 7) {
-						pw.println(quantidadeColuna[i - 4] + ";" + quantidadeColuna[i - 3] + ";"
-								+ quantidadeColuna[i - 2] + ";" + quantidadeColuna[i - 1] + ";" + ldtNow);
-					} else if (i == 3 && j == 9) {
-						pw.println(quantidadeColuna[i - 3] + ";" + quantidadeColuna[i - 2] + ";"
-								+ quantidadeColuna[i - 1] + ";" + ldtNow);
-					} else if (i == 2) {
-						pw.println(quantidadeColuna[i - 2] + ";" + quantidadeColuna[i - 1] + ";" + ldtNow);
-					}
-					pw.flush();
-
-				} catch (Exception e) {
-
-				}
-			}
-			if (print == 1) {
-				st.print();
-			}
-		}
-	}
-
-}
+} else if (i == 4 && j == 7) {
+	quantidadeColuna[i - 4] = (result.getString(i - 3));
+	quantidadeColuna[i - 3] = (result.getString(i - 2).replaceAll("\\r\\n|\\n", ""));
+	quantidadeColuna[i - 2] = (result.getString(i - 1));
+	quantidadeColuna[i - 1] = (result.getString(i));
+	st.addRow(quantidadeColuna[i - 4], quantidadeColuna[i - 3], quantidadeColuna[i - 2],
+			quantidadeColuna[i - 1]);
+				
 ```
->Esse método executa a consulta SQL e, dependendo dos parâmetros, exibe os resultados na console e/ou salva em um arquivo CSV. Ele utiliza a classe Csv para formatar e exibir os resultados na console e para salvar em um arquivo CSV.
+>Esse método executa a consulta SQL e, dependendo dos parâmetros, exibe os resultados no console e salva em um arquivo CSV. Ele utiliza a classe Csv para formatar e exibir os resultados.
   
 </details>  
 
@@ -686,7 +548,7 @@ Um diferencial do banco de dados, como requisito da FATEC, foi a utilização do
  > É o SGBD da Oracle, o mais utilizado em aplicações corporativas, lançado em meados dos anos 70, é multiplataforma e possui licença comercial.
 
 Foi usado para estruturar o modelo de dados relacional da aplicação, além disso foram criadas procedures e triggers no SGBD.
-Para acessar a documentação sobre omo conectar Autonomous Database da Oracle Cloud com Spring Boot JDBC do clique [aqui.](https://github.com/DolphinDatabase/MCS/blob/main/Documenta%C3%A7%C3%A3o/Como%20conectar%20Autonomous%20Database%20da%20Oracle%20Cloud%20com%20Spring%20Boot%20JDBC.pdf)
+Para acessar a documentação sobre como conectar Autonomous Database da Oracle Cloud com Spring Boot JDBC do clique [aqui.](https://github.com/DolphinDatabase/MCS/blob/main/Documenta%C3%A7%C3%A3o/Como%20conectar%20Autonomous%20Database%20da%20Oracle%20Cloud%20com%20Spring%20Boot%20JDBC.pdf)
 
 </details>
 
@@ -891,12 +753,11 @@ Como aluna destaque, fui contratada como estagiária na Soluções Sophia, onde 
 MidAll<br/>
 ![midall](https://user-images.githubusercontent.com/74321890/191144569-593506c4-b02e-41bf-830d-9f6e88a57278.jpeg)
 
-A GSW é uma empresa brasileira. No mercado desde 1991, sua atuação é focada em produzir soluções para gerenciamento e controle de processos e negócios. 
-
 ### Visão do Projeto
 
-A empresa apresentou a necessidade de uma extensão de um produto já existente, que consiste em um portal de anúncio e vendas de imóveis.<br/>
-Tal extensão deveria consistir em um marketplace para anúncio e vendas de automóveis, que permitisse que comprador e vendedor se encontrem, conversem e negociem os processos de compra e venda.
+O software Cloud-In é um aplicativo orquestrador para transferência automática de arquivos entre sistemas de armazenamento online. Através de sua interface minimalista e interativa, o usuário pode cadastrar suas credenciais e configurar as transferências conforme sua necessidade, iniciando a jornada de download e upload entre os storages.
+
+[<img src="https://user-images.githubusercontent.com/74321890/228991716-687c07f9-3b6a-4cea-b855-677b51b2b20a.svg" width="60%" height="60%">](https://www.youtube.com/watch?v=AGRvBq9Xq4U&list=PLUOBqJKbljZsvHbaHWKrQ3z0l9l2Uo_f0 "Cloud-in vídeo Demonstração")
 
 Além disso, a ferramenta deveria possibilitar a carga de alguns dados, como de novos usuários e anúncios.
 
