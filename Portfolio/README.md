@@ -316,6 +316,9 @@ Além disso, foi quando coloquei em prática as aulas de banco de dados e utiliz
 MidAll <br/>
 ![midall](https://user-images.githubusercontent.com/74321890/191144569-593506c4-b02e-41bf-830d-9f6e88a57278.jpeg)
 
+<p align="justify">
+A MidAll nasceu para simplificar a jornada de evolução do seu negócio, visando atingir qualquer visão estratégica. Nossa missão é preparar as empresas para o futuro em uma nova era de disrupções de mercado somadas aos desafios pós-pandemia. Acreditamos que Tecnologia, Dados e Inovação voltados à geração de valor para o cliente são o ambiente de negócios perfeito para resultados promissores.
+
 ### Visão do Projeto
 <p align="justify">
 Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. Atualmente implementamos e apresentaremos o cadastro dos produtos em várias promoções no servidor/ banco de dados, utilizando operadores lógicos para criar diferentes mecânicas de promoções, o desconto é aplicado na sacola de compra e possui uma visualização dedicada para conferência e escolha de possíveis promoções. Além disso, há a autonomia fornecida ao usuário para editar, remover, arquivar ou desarquivar seus produtos e para editar, deletar, interromper ou ativar promoções e da visualização prática e intuitiva dos produtos e promoções cadastradas através da listagem que possui um filtro para que seja possível diferenciar quais os status de produtos e promoções.
@@ -752,6 +755,9 @@ Como aluna destaque, fui contratada como estagiária na Soluções Sophia, onde 
 ## Empresa parceira:
 MidAll<br/>
 ![midall](https://user-images.githubusercontent.com/74321890/191144569-593506c4-b02e-41bf-830d-9f6e88a57278.jpeg)
+
+<p align="justify">
+A MidAll nasceu para simplificar a jornada de evolução do seu negócio, visando atingir qualquer visão estratégica. Nossa missão é preparar as empresas para o futuro em uma nova era de disrupções de mercado somadas aos desafios pós-pandemia. Acreditamos que Tecnologia, Dados e Inovação voltados à geração de valor para o cliente são o ambiente de negócios perfeito para resultados promissores.
 
 ### Visão do Projeto
 
